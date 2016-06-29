@@ -1,0 +1,22 @@
+#create database
+    create database SQLwork default character set utf8
+    
+#use the database
+    use SQLwork
+
+#create InnoDB table
+        create table Expenditure
+    (
+      id int auto_increment primary key,
+      day int not null,
+      obj varchar(10)  not null,
+      quantity int not null,
+      cost int not null
+    ) engine = InnoDB;
+
+#insert record into the table
+    insert into Expenditure (day,obj,quantity,cost) values (1,"cat",5,5000);
+    insert into Expenditure (day,obj,quantity,cost) values (2,"dog",5,5000);
+    insert into Expenditure (day,obj,quantity,cost) values (3,"ice cream",1,100);
+
+    
