@@ -38,5 +38,25 @@ $(document).ready(function() {
             $("#checkAgain").html("");
         }
     });
+    $("#create").click(function() {
+        
+        $.ajax({
+            async: true,
+            type: "post",
+            url: 'controllers/checkSameController.php' ,
+            data: {userName:$("#inputAccount").val(),userPwd:$("#inputPassword").val(),flag : "create"},
+            success: function (response) {
+                var obj = eval("(" +response + ")");
+                alert(obj[0]);
+                if(obj[1])
+                {
+                    
+                }
+                
+            }
+            
+            
+        });
+    });
     
 })

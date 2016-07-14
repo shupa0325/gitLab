@@ -63,7 +63,7 @@
                     <td colspan="2" align="center" bgcolor="#CCCCCC">
                         <input type="submit" value="send" name="sub" />
                         <input type="reset" value="clear" name="res" />
-                        <input type="submit" value="member" name="sub2" />
+                        <input name="flag" value ="" />
                     </td>
                 </tr>
         </form>

@@ -1,0 +1,18 @@
+[14-Jul-2016 07:46:07 UTC] PHP Warning:  include(view/title): failed to open stream: No such file or directory in /home/ubuntu/workspace/WorldO/view/loginAccount.php on line 30
+[14-Jul-2016 07:46:07 UTC] PHP Stack trace:
+[14-Jul-2016 07:46:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/view/loginAccount.php:0
+[14-Jul-2016 07:46:07 UTC] PHP Warning:  include(): Failed opening 'view/title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/WorldO/view/loginAccount.php on line 30
+[14-Jul-2016 07:46:07 UTC] PHP Stack trace:
+[14-Jul-2016 07:46:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/view/loginAccount.php:0
+[14-Jul-2016 07:46:25 UTC] PHP Warning:  include(view/title): failed to open stream: No such file or directory in /home/ubuntu/workspace/WorldO/view/loginAccount.php on line 30
+[14-Jul-2016 07:46:25 UTC] PHP Stack trace:
+[14-Jul-2016 07:46:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/view/loginAccount.php:0
+[14-Jul-2016 07:46:25 UTC] PHP Warning:  include(): Failed opening 'view/title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/WorldO/view/loginAccount.php on line 30
+[14-Jul-2016 07:46:25 UTC] PHP Stack trace:
+[14-Jul-2016 07:46:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/view/loginAccount.php:0
+[14-Jul-2016 07:46:26 UTC] PHP Warning:  include(view/title): failed to open stream: No such file or directory in /home/ubuntu/workspace/WorldO/view/loginAccount.php on line 30
+[14-Jul-2016 07:46:26 UTC] PHP Stack trace:
+[14-Jul-2016 07:46:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/view/loginAccount.php:0
+[14-Jul-2016 07:46:26 UTC] PHP Warning:  include(): Failed opening 'view/title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/WorldO/view/loginAccount.php on line 30
+[14-Jul-2016 07:46:26 UTC] PHP Stack trace:
+[14-Jul-2016 07:46:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/view/loginAccount.php:0
