@@ -46,16 +46,16 @@ $(document).ready(function() {
                 //     });
                 });
                 $("#deleteFriend").click(function() {
-                alert("deleteFriend");
-                // $.ajax({
-                //     async: true,
-                //     type: "post",
-                //     url: 'controllers/userController.php',
-                //     data: {
-                //     },
-                //     success: function(response) {
-                //         }
-                //     });
+                $.ajax({
+                    async: true,
+                    type: "post",
+                    url: 'controllers/userController.php',
+                    data: {userName : 'shupa_tsai0325',friend:$("#deleteFriendt").val(),flag :'deleteFriend'
+                    },
+                    success: function(response) {
+                        alert(response);
+                        }
+                    });
                 });
                 $("#talkFriend").click(function() {
                 alert("talkFriend");

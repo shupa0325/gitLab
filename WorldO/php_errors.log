@@ -64,3 +64,16 @@
 [15-Jul-2016 01:29:34 UTC] PHP Fatal error:  Call to undefined method databaseManager::printMydata() in /home/ubuntu/workspace/WorldO/controllers/userController.php on line 8
 [15-Jul-2016 01:29:34 UTC] PHP Stack trace:
 [15-Jul-2016 01:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/controllers/userController.php:0
+[15-Jul-2016 02:27:55 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/work/WorldO/model/database.php on line 94
+[15-Jul-2016 02:27:55 UTC] PHP Stack trace:
+[15-Jul-2016 02:27:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/controllers/userController.php:0
+[15-Jul-2016 02:27:55 UTC] PHP   2. databaseManager->checkAllFriend() /home/ubuntu/workspace/work/WorldO/controllers/userController.php:11
+[15-Jul-2016 02:27:55 UTC] PHP   3. mysqli_fetch_row() /home/ubuntu/workspace/work/WorldO/model/database.php:94
+[15-Jul-2016 02:27:57 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/work/WorldO/model/database.php on line 94
+[15-Jul-2016 02:27:57 UTC] PHP Stack trace:
+[15-Jul-2016 02:27:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/controllers/userController.php:0
+[15-Jul-2016 02:27:57 UTC] PHP   2. databaseManager->checkAllFriend() /home/ubuntu/workspace/work/WorldO/controllers/userController.php:11
+[15-Jul-2016 02:27:57 UTC] PHP   3. mysqli_fetch_row() /home/ubuntu/workspace/work/WorldO/model/database.php:94
+[15-Jul-2016 02:42:45 UTC] PHP Fatal error:  Call to undefined method databaseManager::deleteFriend() in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 14
+[15-Jul-2016 02:42:45 UTC] PHP Stack trace:
+[15-Jul-2016 02:42:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/controllers/userController.php:0

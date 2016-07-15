@@ -87,7 +87,7 @@
             
             #checkAllFriend($myAccount)用於搜尋$myAccount的好友名單
             public function checkAllFriend($myAccount){
-                $searchFriend = 'SELECT `friendAccount` FROM `userFrided` where `userAccount`=' . "'$myAccount'";
+                $searchFriend = 'SELECT `friendAccount` FROM `userFriend` where `userAccount`=' . "'$myAccount'";
                 $result = mysqli_query(Server::$worldO,$searchFriend);
                 
                 $res;
@@ -108,8 +108,18 @@
             }
             
             #updateMyFriend($myAccount)新增好友或者刪除好友
-            public function updateMyFriend($myAccount,$friendEmail,$ins){
-               
+            public function deleteFriend($myAccount,$friendAccount){
+                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$myAccount' AND `userFriend`.`friendAccount` = '$friendAccount'";
+                mysqli_query(Server::$worldO,$sel);
+                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$friendAccount' AND `userFriend`.`friendAccount` = '$myAccount'";
+                mysqli_query(Server::$worldO,$sel);
+                if(mysqli_query(Server::$worldO,$sel)){
+                    echo "success";
+                }else{
+                    echo "failure";
+                }
+            
+                
             }
             
             

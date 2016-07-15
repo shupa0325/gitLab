@@ -51,11 +51,21 @@
             <br><br>
         </TR>
         <tr>
-            <input type="button" id="addFriend" name="addFriend" value="addFriend"></button>
+            <td>
+            <input type="button" id="addFriend" name="addFriend" value="addFriend"> </button>
+            </td>
+            <td>
+            <input type="text" id="addFriendt" name="addFriendt" value=""></button>    
+            </td>
             <br><br>
         </TR>
         <tr>
+            <td>
             <input type="button" id="deleteFriend" name="deleteFriend" value="deleteFriend"></button>
+            </td>
+            <td>
+            <input type="text" id="deleteFriendt" name="deleteFriendt" value=""></button>    
+            </td>
             <br><br>
         </TR>
         <tr>
