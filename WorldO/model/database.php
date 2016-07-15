@@ -107,7 +107,7 @@
                 return $row;
             }
             
-            #updateMyFriend($myAccount)新增好友或者刪除好友
+            #deleteFriend($myAccount,$friendAccount)刪除好友
             public function deleteFriend($myAccount,$friendAccount){
                 $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$myAccount' AND `userFriend`.`friendAccount` = '$friendAccount'";
                 mysqli_query(Server::$worldO,$sel);
@@ -117,6 +117,25 @@
                     echo "success";
                 }else{
                     echo "failure";
+                }
+            
+                
+            }
+            
+            #addFriend($myAccount,$friendAccount)新增好友
+            public function addFriend($myAccount,$friendAccount){
+                $sel="select * from `account` where `pAccount` =  '$friendAccount'";
+                if(mysqli_query(Server::$worldO,$sel)){
+                    
+                $sel = "INSERT INTO `worldO`.`userFriend` (`userAccount`, `friendAccount`, `talkRecord`) VALUES ('$myAccount', '$friendAccount', NULL), ('$friendAccount', '$myAccount', NULL);";
+                if(mysqli_query(Server::$worldO,$sel)){
+                    echo "success";
+                }else{
+                    echo "failure";
+                }
+                    
+                }else{
+                    echo "no person";
                 }
             
                 

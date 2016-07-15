@@ -34,16 +34,16 @@ $(document).ready(function() {
                     });
                 });
                 $("#addFriend").click(function() {
-                alert("addFriend");
-                // $.ajax({
-                //     async: true,
-                //     type: "post",
-                //     url: 'controllers/userController.php',
-                //     data: {
-                //     },
-                //     success: function(response) {
-                //         }
-                //     });
+                $.ajax({
+                    async: true,
+                    type: "post",
+                    url: 'controllers/userController.php',
+                    data: {userName : 'shupa_tsai0325',friend:$("#addFriendt").val(),flag :'addFriend'
+                    },
+                    success: function(response) {
+                        alert(response);
+                        }
+                    });
                 });
                 $("#deleteFriend").click(function() {
                 $.ajax({

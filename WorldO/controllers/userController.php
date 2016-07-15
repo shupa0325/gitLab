@@ -10,6 +10,9 @@
         case "friendTable":
                 $check ->checkAllFriend($_POST["userName"]);
                 break;
+        case "addFriend":
+                $check ->addFriend($_POST["userName"],$_POST['friend']);
+                break;
         case "deleteFriend":
                 $check ->deleteFriend($_POST["userName"],$_POST['friend']);
                 break;
