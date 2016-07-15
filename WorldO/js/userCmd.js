@@ -1,27 +1,37 @@
 $(document).ready(function() {
             $("#personData").click(function() {
-                alert("personData");
-                // $.ajax({
-                //     async: true,
-                //     type: "post",
-                //     url: 'controllers/userController.php',
-                //     data: {
-                //     },
-                //     success: function(response) {
-                //         }
-                //     });
+                $.ajax({
+                    async: true,
+                    type: "post",
+                    url: 'controllers/userController.php',
+                    data: {userName : 'shupa_tsai0325',flag :'personData'},
+                    success: function(response) {
+                        var obj = JSON.parse(response);
+                        var res ="";
+                        for(var val in obj){
+                            res =res + val + " : " +  obj[val] + "\n";
+                        }
+                        alert(res);
+                        }
+                    });
                 });
             $("#friendTable").click(function() {
-                alert("friendTable");
-                // $.ajax({
-                //     async: true,
-                //     type: "post",
-                //     url: 'controllers/userController.php',
-                //     data: {
-                //     },
-                //     success: function(response) {
-                //         }
-                //     });
+                $.ajax({
+                    async: true,
+                    type: "post",
+                    url: 'controllers/userController.php',
+                    data: {userName : 'shupa_tsai0325',flag :'friendTable'
+                    },
+                    success: function(response) {
+                        var obj = JSON.parse(response);
+                        var res ="";
+                        for(var val in obj){
+                            res =res + val + " : " +  obj[val] + "\n";
+                        }
+                        alert(res);
+                        
+                        }
+                    });
                 });
                 $("#addFriend").click(function() {
                 alert("addFriend");

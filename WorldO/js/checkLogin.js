@@ -8,7 +8,7 @@ $(document).ready(function() {
             url: 'controllers/checkSameController.php' ,
             data: {userName:$("#inputAccount").val(),userPwd:$("#inputPassword").val(),flag : "login"},
             success: function (response) {
-                var obj = eval("(" +response + ")");
+                var obj = JSON.parse(response);
                 alert(obj[0]);
                 if(obj[1])
                 {

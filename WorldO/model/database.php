@@ -66,6 +66,13 @@
                                     
             }
             
+            public function printMydata($myAccount){
+                $sel = 'SELECT * FROM `account` where `pAccount`=' . "'$myAccount'";
+                $result = mysqli_query(Server::$worldO,$sel);
+                $row = mysqli_fetch_row($result);
+                $row = json_encode($row);
+                echo $row;
+            }
             #createAccount($userData)用於創建帳戶
             public function createAccount($userData){
                 $insertAccount = 'INSERT INTO `worldO`.`account` (`pAccount`, `pPassword`, `chineseName`, `englishName`, `birthday`, `email`, `phoneNumber`, `address`)'
@@ -81,12 +88,15 @@
             #checkAllFriend($myAccount)用於搜尋$myAccount的好友名單
             public function checkAllFriend($myAccount){
                 $searchFriend = 'SELECT `friendAccount` FROM `userFrided` where `userAccount`=' . "'$myAccount'";
-                
                 $result = mysqli_query(Server::$worldO,$searchFriend);
+                
+                $res;
                 while($row = mysqli_fetch_row($result)){
-                    foreach($row as $value)
-                    echo $value . "<BR>";
+                $res[]=$row[0];
                 }
+                $res= json_encode($res);
+                echo $res;
+                
             }
             
              #searchAccount($email)用於搜尋EMail的好友
@@ -98,7 +108,7 @@
             }
             
             #updateMyFriend($myAccount)新增好友或者刪除好友
-            public function updateMyFriend($myAccount,$ins){
+            public function updateMyFriend($myAccount,$friendEmail,$ins){
                
             }
             
