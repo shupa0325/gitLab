@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +69,17 @@
             <br><br>
         </TR>
         <tr>
+            <td>
             <input type="button" id="talkFriend" name="talkFriend" value="talkFriend"></button>
+            </td>
+            <td>
+                <select name = "friendTalk" size = "10" >
+                    <?php for($i=0;$i<5;$i++):?>
+                        <option><?php ?></option>
+                    <?php endfor;?>
+                    
+                </select>
+            </td>
             <br><br>
         </TR>
         <tr>
