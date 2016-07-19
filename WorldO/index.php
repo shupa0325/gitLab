@@ -27,7 +27,7 @@
 <body style="background-color:lightpink; background: url('image/homepage.jpg') no-repeat center center fixed;background-size:cover;">
     <div id ="allpage">
     <?php include "title";?>
-    <div class="container1" align="center" valign="center">
+    <div class="container1" align="center" valign="center" >
         <div class="col-lg-4"></div>
         <div class="col-lg-4" id="pageH">
             

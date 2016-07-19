@@ -29,7 +29,7 @@
 
 <body>
     <?php include "title";?>
-    <form class="form-signin" role="form">
+    <form class="form-signin" role="form ">
         <div class="container1" align="center" valign="center">
             <div class="col-lg-4"></div>
             <div class="col-lg-4" id="pageH">
