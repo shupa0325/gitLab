@@ -49,7 +49,7 @@ $(document).ready(function() {
                 $.ajax({
                     async: true,
                     type: "post",
-                    url: 'controllers/userController.php',
+                    url: 'data/',
                     data: {userName : 'shupa_tsai0325',flag :'personData'},
                     success: function(response) {
                         var obj = JSON.parse(response);

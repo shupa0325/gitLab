@@ -198,3 +198,691 @@
 [18-Jul-2016 08:37:49 UTC] PHP Stack trace:
 [18-Jul-2016 08:37:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/personalPage.php:0
 [18-Jul-2016 09:10:21 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/work/WorldO/personalPage.php on line 98
+[19-Jul-2016 07:15:12 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:15:12 UTC] PHP Stack trace:
+[19-Jul-2016 07:15:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:15:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:15:12 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:15:12 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:15:12 UTC] PHP Stack trace:
+[19-Jul-2016 07:15:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:15:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:15:12 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:25 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:26 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:26 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:26 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:26 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:26 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:28 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:28 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:28 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:28 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:29 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:29 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:29 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:29 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:29 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:29 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:29 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:29 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:29 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:29 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:29 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:29 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:30 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:30 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:31 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:31 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:31 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:31 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:31 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:31 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:32 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:32 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:32 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:32 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:32 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:32 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:33 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:33 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:34 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:16:35 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:16:35 UTC] PHP Stack trace:
+[19-Jul-2016 07:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:16:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:16:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:17:21 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:17:21 UTC] PHP Stack trace:
+[19-Jul-2016 07:17:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:17:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:17:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:17:21 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:17:21 UTC] PHP Stack trace:
+[19-Jul-2016 07:17:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:17:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:17:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:17:21 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:17:21 UTC] PHP Stack trace:
+[19-Jul-2016 07:17:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:17:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:17:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:17:21 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/controllers/userController.php on line 3
+[19-Jul-2016 07:17:21 UTC] PHP Stack trace:
+[19-Jul-2016 07:17:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:17:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:17:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/work/WorldO/core/App.php:20
+[19-Jul-2016 07:18:24 UTC] PHP Fatal error:  Class 'userController' not found in /home/ubuntu/workspace/work/WorldO/core/App.php on line 21
+[19-Jul-2016 07:18:24 UTC] PHP Stack trace:
+[19-Jul-2016 07:18:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:18:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:19:11 UTC] PHP Fatal error:  Class 'userController' not found in /home/ubuntu/workspace/work/WorldO/core/App.php on line 21
+[19-Jul-2016 07:19:11 UTC] PHP Stack trace:
+[19-Jul-2016 07:19:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:19:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:19:14 UTC] PHP Fatal error:  Class 'userController' not found in /home/ubuntu/workspace/work/WorldO/core/App.php on line 21
+[19-Jul-2016 07:19:14 UTC] PHP Stack trace:
+[19-Jul-2016 07:19:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:19:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[19-Jul-2016 07:23:46 UTC] PHP Warning:  include(title): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/index.php on line 29
+[19-Jul-2016 07:23:46 UTC] PHP Stack trace:
+[19-Jul-2016 07:23:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:23:46 UTC] PHP Warning:  include(): Failed opening 'title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/index.php on line 29
+[19-Jul-2016 07:23:46 UTC] PHP Stack trace:
+[19-Jul-2016 07:23:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:15 UTC] PHP Warning:  include(title): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/index.php on line 29
+[19-Jul-2016 07:25:15 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:15 UTC] PHP Warning:  include(): Failed opening 'title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/index.php on line 29
+[19-Jul-2016 07:25:15 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:20 UTC] PHP Warning:  include(title): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/index.php on line 29
+[19-Jul-2016 07:25:20 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:20 UTC] PHP Warning:  include(): Failed opening 'title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/index.php on line 29
+[19-Jul-2016 07:25:20 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:31 UTC] PHP Warning:  include(title.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/index.php on line 27
+[19-Jul-2016 07:25:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:31 UTC] PHP Warning:  include(): Failed opening 'title.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/index.php on line 27
+[19-Jul-2016 07:25:31 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:32 UTC] PHP Warning:  include(title.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/index.php on line 27
+[19-Jul-2016 07:25:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:32 UTC] PHP Warning:  include(): Failed opening 'title.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/index.php on line 27
+[19-Jul-2016 07:25:32 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[19-Jul-2016 07:25:46 UTC] PHP Warning:  include(title): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/loginAccount.php on line 31
+[19-Jul-2016 07:25:46 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/loginAccount.php:0
+[19-Jul-2016 07:25:46 UTC] PHP Warning:  include(): Failed opening 'title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/loginAccount.php on line 31
+[19-Jul-2016 07:25:46 UTC] PHP Stack trace:
+[19-Jul-2016 07:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/loginAccount.php:0

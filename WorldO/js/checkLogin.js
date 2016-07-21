@@ -12,7 +12,7 @@ $(document).ready(function() {
                 alert(obj[0]);
                 if(obj[1])
                 {
-                    window.location="personalPage.php?";
+                    window.location="views/personalPage.php?";
                 }
                 
             }

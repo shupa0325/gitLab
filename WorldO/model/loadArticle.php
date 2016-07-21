@@ -1,5 +1,5 @@
 <?php
-        include_once "database.php";
+        include_once "databaseManager.php";
         Server::setConnect();
         $article;
         

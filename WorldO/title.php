@@ -11,8 +11,14 @@
             <div id="navbar" class="collapse navbar-collapse">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li id = "login"><a href = "loginAccount.php">登入</a></li>
-                    <li id = "create"><a href = "createAccount.php">註冊</a></li>
+<?php session_start();if(isset($_SESSION['username'])){ ?>
+         <li id = "login"><?php echo "<BR>".$_SESSION['userName'];?></li>
+         <li id = "logout"><a href = "data/logoutAccount">登出</a></li>
+
+<?php }else{ ?>
+        <li id = "login" ><a style = "cursor : pointer" >登入</a></li>
+        <li id = "create"><a style = "cursor : pointer"  >註冊</a></li>
+<?php }?>
                 </ul>
             </div>
         </div>
