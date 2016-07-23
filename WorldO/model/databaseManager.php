@@ -1,27 +1,16 @@
 <?php session_start();
 header("Content-Type:text/html; charset=utf-8");
-#server負責進行資料庫連接，將連接資料建給靜態變數$worldO 
-    class Server {
-        public static $worldO;
-        public static function setConnect() {
-            $worldO=mysqli_connect("localhost", "guest", "guest", "worldO");
-            if (mysqli_connect_errno()) {
-                printf("連接失敗： %s\n", mysqli_connect_error());
-                exit();
-            }
-            mysqli_set_charset($worldO, "utf8");
-            Server::$worldO=$worldO;
-        }
-    }
+require_once "Server.php";
     
     #管理資料庫設定，檢查帳號重複性、創建帳號 
     class databaseManager {
         public function __construct() {
             Server::setConnect();
+            
         }
         #前端jquery檢查創建帳號合理性的窗口 
         public function ajaxCheck($userAccount) {
-            $result=$this->loginAccount($userAccount);
+            $result=$this->checkAccount($userAccount);
             switch($result) {
                 case "0": 
                     echo"$userAccount僅可為數字及英文字母還有底線";
@@ -38,9 +27,10 @@ header("Content-Type:text/html; charset=utf-8");
                 default: echo "error in ajaxCheck";
             }
         }
+        
         #前端jquery檢查使用者帳密是否正確 
         public function ajaxPwd($userName, $userPwd) {
-            $result=$this->checkAccount($userName, $userPwd);
+            $result=$this->loginAccount($userName, $userPwd);
             switch($result) {
                 case "0": 
                     echo"無此帳號唷";
@@ -60,6 +50,7 @@ header("Content-Type:text/html; charset=utf-8");
                 default: echo "error in ajaxPwd";
             }
         }
+        
         #checkAccount($userAccount)用於檢查帳號格式正確性與是否重複 
         public function checkAccount($userAccount) {
             if(!preg_match("/^[A-Za-z_][A-Za-z0-9_]{8,15}$/", $userAccount)) {
@@ -102,6 +93,7 @@ header("Content-Type:text/html; charset=utf-8");
                 return false;
             }
         }
+        
         #loginAccount($userName, $userPwd)用於檢查登入
         public function loginAccount($userName, $userPwd) {
             $sel='SELECT `pPassword` FROM `account` where `pAccount`=' . "'$userName'";

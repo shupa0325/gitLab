@@ -7,16 +7,20 @@
     <head>
         <?PHP include_once('config.php'); ?>
         <?= $this->script('userCmd') ?>
-
+<style type="text/css">
+    .container{
+        width:1170px;
+    }
+</style>
     </head>
-
-    <body style="background-color:lightpink; background: url('image/homepage.jpg') no-repeat center center fixed;background-size:cover;">
+<!--background: url('image/homepage.jpg') no-repeat center center fixed;background-size:cover;-->
+    <body style="background-color:#5599FF; ">
 
         <?php include "title.php";?>
         <BR>
         <BR>
         <BR>
-        <div class="left col-lg-3">
+        <div class="left col-xs-3">
             <form>
                 <tr>
                     <input type="button" id="personData" name="personData" value="personData"></button>
@@ -51,7 +55,7 @@
                 </TR>
             </form>
         </div>
-        <div class="middle col-lg-6">
+        <div class="middle col-xs-6">
             <div class="container1">
                 <form action="newArticle.php" method="POST">
                     <tr>
@@ -68,37 +72,47 @@
                     </tr>
                 </form>
             </div>
-            <!--<form class="article" role="form">-->
-            <!--    <?phph include "model/loadArticle.php";-->
+            <form class="article" role="form">
+            <!--    <?php include_once "model/loadArticle.php";?>-->
             <!--    <?php foreach($res as $value): ?>-->
             <!--    <tr>-->
             <!--<?php foreach($value as $value2): ?>-->
             <!--        <BR>-->
             <!--        <td>-->
-            <!--            <?php echo $value[0]; ?>-->
+            <!--            <?php  ?>-->
             <!--        </td>-->
             <!--        <BR>-->
             <!--<?php endforeach; ?>-->
             <!--    </tr>-->
             <!--    <?php endforeach; ?>-->
-            <!--</form>-->
+            </form>
 
         </div>
-        <div class="right col-lg-3 float:right">
+        <div class="right col-xs-3 float:right">
             <form>
                 <tr>
                     <td>
-                        <input type="button" id="talkFriend" name="talkFriend" value="talkFriend"></button>
+                        <input type="button" id="talkFriend" name="talkFriend" value="talkFriend">
                     </td>
                     <td>
+                        <div>
                         <div id="result">Hello! </div>
-                        <input type="text" id="output" name="output" value=""></button>
+                        <div ><p id='showtext'><div>
+                        </div>
                     </td>
                     <td>
-                        <select name="friendTalk" size="10">
-                    <?php for($i=0;$i<5;$i++):?>
-                        <option><?php ?></option>
-                    <?php endfor;?>
+                        <div id="friendselect"style="
+    position: fixed;
+    top: 15%;
+    right: 7%;
+"><select name="friendTalk" id="friendTalk" size="10" style="
+    position: fixed;
+    right: 2%;
+"></div>
+                
+                    
+                </select>
+                
                     
                 </select>
                     </td>

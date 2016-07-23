@@ -43,14 +43,9 @@
         
         public function callMethod(){
             $check = $this->model("databaseManager");
-            switch($_POST["flag"])
-            {
-                case "checkAcc":
-                                $check ->ajaxCheck($_POST["userName"]);
-                                break;
-                default:
-                    echo "no cmd";
-            }
+           
+            $check ->ajaxCheck($_POST["userName"]);
+        
             $check->close();
         }
     }

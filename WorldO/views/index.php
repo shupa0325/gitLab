@@ -7,14 +7,11 @@
     <head>
         <?PHP include_once('config.php'); ?>
         <?= $this->script('homepage') ?>
-        <script>
-            
-        </script>
     </head>
 
-    <body style="background-color:lightpink; background: url('/WorldO/image/homepage.jpg') no-repeat center center fixed;background-size:cover;">
+    <body style="background-color:#5599FF; background: url('/WorldO/image/homepage.jpg') no-repeat center center fixed;background-size:cover;">
         <div id="allpage">
-            <?php include "title.php";?>
+            <?php include_once ("title.php");?>
 
             <form class="form-signin" style = "display : none"role="form "method = "post" action = "guest/loginAccount">
                 <div class="container1" align="center" valign="center">

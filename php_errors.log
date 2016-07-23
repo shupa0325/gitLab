@@ -886,3 +886,27 @@
 [19-Jul-2016 07:25:46 UTC] PHP Warning:  include(): Failed opening 'title' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/loginAccount.php on line 31
 [19-Jul-2016 07:25:46 UTC] PHP Stack trace:
 [19-Jul-2016 07:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/loginAccount.php:0
+[21-Jul-2016 06:20:09 UTC] PHP Warning:  Missing argument 2 for databaseManager::loginAccount(), called in /home/ubuntu/workspace/work/WorldO/model/databaseManager.php on line 24 and defined in /home/ubuntu/workspace/work/WorldO/model/databaseManager.php on line 106
+[21-Jul-2016 06:20:09 UTC] PHP Stack trace:
+[21-Jul-2016 06:20:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[21-Jul-2016 06:20:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[21-Jul-2016 06:20:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/work/WorldO/core/App.php:33}() /home/ubuntu/workspace/work/WorldO/core/App.php:33
+[21-Jul-2016 06:20:09 UTC] PHP   4. guestController->callMethod() /home/ubuntu/workspace/work/WorldO/core/App.php:33
+[21-Jul-2016 06:20:09 UTC] PHP   5. databaseManager->ajaxCheck() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:47
+[21-Jul-2016 06:20:09 UTC] PHP   6. databaseManager->loginAccount() /home/ubuntu/workspace/work/WorldO/model/databaseManager.php:24
+[21-Jul-2016 06:21:22 UTC] PHP Warning:  Missing argument 2 for databaseManager::loginAccount(), called in /home/ubuntu/workspace/work/WorldO/model/databaseManager.php on line 24 and defined in /home/ubuntu/workspace/work/WorldO/model/databaseManager.php on line 106
+[21-Jul-2016 06:21:22 UTC] PHP Stack trace:
+[21-Jul-2016 06:21:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[21-Jul-2016 06:21:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[21-Jul-2016 06:21:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/work/WorldO/core/App.php:33}() /home/ubuntu/workspace/work/WorldO/core/App.php:33
+[21-Jul-2016 06:21:22 UTC] PHP   4. guestController->callMethod() /home/ubuntu/workspace/work/WorldO/core/App.php:33
+[21-Jul-2016 06:21:22 UTC] PHP   5. databaseManager->ajaxCheck() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:47
+[21-Jul-2016 06:21:22 UTC] PHP   6. databaseManager->loginAccount() /home/ubuntu/workspace/work/WorldO/model/databaseManager.php:24
+[21-Jul-2016 06:21:48 UTC] PHP Warning:  Missing argument 2 for databaseManager::loginAccount(), called in /home/ubuntu/workspace/work/WorldO/model/databaseManager.php on line 24 and defined in /home/ubuntu/workspace/work/WorldO/model/databaseManager.php on line 106
+[21-Jul-2016 06:21:48 UTC] PHP Stack trace:
+[21-Jul-2016 06:21:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[21-Jul-2016 06:21:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:6
+[21-Jul-2016 06:21:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/work/WorldO/core/App.php:33}() /home/ubuntu/workspace/work/WorldO/core/App.php:33
+[21-Jul-2016 06:21:48 UTC] PHP   4. guestController->callMethod() /home/ubuntu/workspace/work/WorldO/core/App.php:33
+[21-Jul-2016 06:21:48 UTC] PHP   5. databaseManager->ajaxCheck() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:47
+[21-Jul-2016 06:21:48 UTC] PHP   6. databaseManager->loginAccount() /home/ubuntu/workspace/work/WorldO/model/databaseManager.php:24

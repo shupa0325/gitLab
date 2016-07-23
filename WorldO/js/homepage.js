@@ -59,7 +59,6 @@ $(document).ready(function() {
     //----------------------------------------
     
     //創建帳號檢查
-    
     $("#createA").click(function() {
         if(checkdataAccount($("#pAccount").val()) && checkdataPassword($("#pPassword").val()))
         {
