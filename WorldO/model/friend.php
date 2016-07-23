@@ -65,15 +65,29 @@
                 }
         }
             
-         
-        function acceptInvite($inviteAccount, $playerAccount, $updatetime){
-             
-        }
-         
-        function deleteFriend($inviteAccount, $playerAccount){
+        #acceptInvite($myAccount,$friendAccount) 接受好友邀請
+        function acceptInvite($myAccount,$friendAccount){
+             $sql="UPDATE  `worldO`.`userFriend` SET  `isfriend` =  '1' WHERE  `userFriend`.`userAccount` =  '$myAccount' AND  `userFriend`.`friendAccount` =  '$friendAccount';";
+             if(mysqli_query(Server::$worldO,$sql))
+                return "success";
+                return "failure";
+            
             
         }
-        
+        #deleteFriend($myAccount,$friendAccount)刪除好友 
+        function deleteFriend($myAccount,$friendAccount){
+                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$myAccount' AND `userFriend`.`friendAccount` = '$friendAccount'";
+                mysqli_query(Server::$worldO,$sel);
+                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$friendAccount' AND `userFriend`.`friendAccount` = '$myAccount'";
+                mysqli_query(Server::$worldO,$sel);
+                if(mysqli_query(Server::$worldO,$sel)){
+                    echo "success";
+                }else{
+                    echo "failure";
+                }
+             
+        }
+            
     }
 
 ?>

@@ -67,3 +67,9 @@
 [21-Jul-2016 05:55:02 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/WorldO/controllers/userController.php on line 3
 [21-Jul-2016 05:55:02 UTC] PHP Stack trace:
 [21-Jul-2016 05:55:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/controllers/userController.php:0
+[23-Jul-2016 08:42:06 UTC] PHP Warning:  require_once(../model/database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/WorldO/controllers/userController.php on line 3
+[23-Jul-2016 08:42:06 UTC] PHP Stack trace:
+[23-Jul-2016 08:42:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/controllers/userController.php:0
+[23-Jul-2016 08:42:06 UTC] PHP Fatal error:  require_once(): Failed opening required '../model/database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/WorldO/controllers/userController.php on line 3
+[23-Jul-2016 08:42:06 UTC] PHP Stack trace:
+[23-Jul-2016 08:42:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/WorldO/controllers/userController.php:0

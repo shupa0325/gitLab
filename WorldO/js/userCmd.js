@@ -1,4 +1,6 @@
     function noticeTimer() {
+        
+        //find if has invited by other Account
         $.ajax({
             async: true,
             type: "post",
@@ -6,14 +8,44 @@
             data: {},
             success: function(response) {
                 if (response != ' null') {
+                    
+                var obj = JSON.parse(response);
+                var res = "";
+                $('.noticeList').remove();
+                for (var val in obj) {
+                    res = res + val + " : " + obj[val] + "\n";
+                    
                    $("#notice").css("color","red");
-                    $("#articlecontent").val(response);
+                   $("#noticeTable").remove(function(){
+                       $("#noticeTable").append("<tr id="+obj[val]+"class='noticeList'><td>"+obj[val]+"</td><td><button onclick='javascript:alert('abc')' id='yes' name="+obj[val]+">yes</button></td><td><button  class='no' name="+obj[val]+"_no>no</button></td></tr>");
+                   });
+                   
+                    
+                }
+                   
+                   $('#yes').click(function() {
+                       $.ajax({
+                        async: true,
+                        type: "post",
+                        url: 'data/acceptfriend',
+                        data: {friend:$(this).prop("name"),
+                        },
+                        success: function(response) {
+                        }
+                    });
+                    $('#'+$(this).prop("name")).remove()
+              });
+        
+                    
                 }else{
                     $("#notice").css("color","blue");
                 }
 
             }
         });
+        
+        
+        //display the friendtable 
         $.ajax({
             async: true,
             type: "post",
@@ -71,12 +103,36 @@
                     }
                 });
             });
+            $("#yes").click(function() {
+            // $.ajax({
+            //     async: true,
+            //     type: "post",
+            //     url: 'data/acceptfriend',
+            //     data: {friend:$("#").val(),
+            //     },
+            //     success: function(response) {
+            //         alert(response);
+            //         }
+            //     });
+            });
+            $("#no").click(function() {
+            $.ajax({
+                async: true,
+                type: "post",
+                url: 'data/refusefriend',
+                data: {friend:$("#").val(),
+                },
+                success: function(response) {
+                    alert(response);
+                    }
+                });
+            });
             $("#deleteFriend").click(function() {
             $.ajax({
                 async: true,
                 type: "post",
-                url: 'controllers/userController.php',
-                data: {userName : 'shupa_tsai0325',friend:$("#deleteFriendt").val(),flag :'deleteFriend'
+                url: 'data/refusefriend',
+                data: {friend:$("#deleteFriendt").val(),flag :'deleteFriend'
                 },
                 success: function(response) {
                     alert(response);

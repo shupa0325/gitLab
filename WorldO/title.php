@@ -17,20 +17,18 @@
          <li ><a style = "cursor : pointer "id = "notice" >好友邀請</a>
          <div id="invite_list" style="
     position: absolute;
-    background: red;
+    background: pray;
     width: 200%;
     height: 350px;
     display:none;
     font-size:2em;
-"><table>
-    <style type="text/css">
+">
+             <style type="text/css">
         td{
             border:white 2px solid;
         }
     </style>
-    <tr>
-        <td>蔡雨霖</td><td>yes</td><td>no</td>
-    </tr>
+             <table id="noticeTable">
 </table></div></li>
          </li>
          <li id = "logout"><a href = " data/logoutAccount">登出</a></li>

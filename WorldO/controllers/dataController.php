@@ -1,6 +1,7 @@
 <?php
     session_start();
     class dataController extends Controller{
+        
         public function logoutAccount(){
             session_destroy();
             header("location:/WorldO/");
@@ -19,8 +20,15 @@
             $friend = $this->model("friend");
             $friend = $friend->addFriend($_SESSION['username'],$_POST['friend']);
         }
-        // public function
-        // public function
+        public function acceptfriend(){
+            $friend = $this->model("friend");
+            echo $friend -> acceptInvite($_SESSION['username'],$_POST['friend']);
+        }
+        public function refusefriend(){
+            $friend = $this->model("friend");
+            $friend -> deleteFriend($_SESSION['username'],$_POST['friend']);
+        
+        }
         // public function
         // public function
     }
