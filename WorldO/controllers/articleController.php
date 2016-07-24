@@ -1,26 +1,21 @@
 <?php
-    
+    session_start();
     class articleController extends Controller{
-       
+        function loadArticle(){
+            $load = $this -> model("Article");
+            echo $load -> loadArticle($_SESSION['username']);
+            
+        }
+        function newArticle(){
+            $load = $this -> model("Article");
+           if(!$load->newArticle($_SESSION['username'],$_POST))
+           {
+              echo "成功";
+              header("refresh:1;/WorldO/");
+           }else{
+              echo "失敗";
+              header("refresh:1;/WorldO/");
+           }
+        } 
     }
-
-    //  require_once "../model/database.php";
-    // $check = new databaseManager();
-    // switch($_POST["flag"])
-    // {
-    //     case "personData":
-    //             $check ->printMydata($_POST["userName"]);
-    //             break;
-    //     case "friendTable":
-    //             $check ->checkAllFriend($_POST["userName"]);
-    //             break;
-    //     case "addFriend":
-    //             $check ->addFriend($_POST["userName"],$_POST['friend']);
-    //             break;
-    //     case "deleteFriend":
-    //             $check ->deleteFriend($_POST["userName"],$_POST['friend']);
-    //             break;
-    //     default:
-    //         echo "no cmd";
-    // }
 ?>

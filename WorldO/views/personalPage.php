@@ -57,7 +57,7 @@
         </div>
         <div class="middle col-xs-6">
             <div class="container1">
-                <form action="newArticle.php" method="POST">
+                <form action="article/newArticle" method="POST">
                     <tr>
                         標題 : <input type="text" id="articletitle" name="articletitle" maxlength="30" required/>
                         <BR>文章內容:
@@ -72,8 +72,13 @@
                     </tr>
                 </form>
             </div>
-            <form class="article" role="form">
-            <!--    <?php include_once "model/loadArticle.php";?>-->
+            <form class="article" role="form" id="articletest">
+                
+                <!--<h3>標題</h3>-->
+                <!--<h5>帳號</h5>-->
+                <!--<textarea rows="4" cols="20" readonly="readonly">內容</textarea>-->
+                <!--<h5>時間</h5>-->
+                <!--<?php include_once "article/loadArticle";?>-->
             <!--    <?php foreach($res as $value): ?>-->
             <!--    <tr>-->
             <!--<?php foreach($value as $value2): ?>-->

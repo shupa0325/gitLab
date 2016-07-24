@@ -1,5 +1,5 @@
     function noticeTimer() {
-        
+
         //find if has invited by other Account
         $.ajax({
             async: true,
@@ -8,43 +8,44 @@
             data: {},
             success: function(response) {
                 if (response != ' null') {
-                    
-                var obj = JSON.parse(response);
-                var res = "";
-                $('.noticeList').remove();
-                for (var val in obj) {
-                    res = res + val + " : " + obj[val] + "\n";
-                    
-                   $("#notice").css("color","red");
-                   $("#noticeTable").remove(function(){
-                       $("#noticeTable").append("<tr id="+obj[val]+"class='noticeList'><td>"+obj[val]+"</td><td><button onclick='javascript:alert('abc')' id='yes' name="+obj[val]+">yes</button></td><td><button  class='no' name="+obj[val]+"_no>no</button></td></tr>");
-                   });
-                   
-                    
-                }
-                   
-                   $('#yes').click(function() {
-                       $.ajax({
-                        async: true,
-                        type: "post",
-                        url: 'data/acceptfriend',
-                        data: {friend:$(this).prop("name"),
-                        },
-                        success: function(response) {
-                        }
+
+                    var obj = JSON.parse(response);
+                    var res = "";
+
+                    for (var val in obj) {
+                        res = res + val + " : " + obj[val] + "\n";
+                        $('td,tr').remove();
+                        $("#notice").css("color", "red");
+                        // $("#noticeTable").remove();
+                        $("#noticeTable").append("<tr id=" + obj[val] + "class='noticeList'><td>" + obj[val] + "</td><td><button onclick='javascript:alert('abc')' id='yes' name=" + obj[val] + ">yes</button></td><td><button  class='no' name=" + obj[val] + "_no>no</button></td></tr>");
+
+                    }
+
+                    $('#yes').click(function() {
+                        $.ajax({
+                            async: true,
+                            type: "post",
+                            url: 'data/acceptfriend',
+                            data: {
+                                friend: $(this).prop("name"),
+                            },
+                            success: function(response) {
+                                $("#noticeTable").hide();
+                            }
+                        });
+
                     });
-                    $('#'+$(this).prop("name")).remove()
-              });
-        
-                    
-                }else{
-                    $("#notice").css("color","blue");
+
+
+                }
+                else {
+                    $("#notice").css("color", "blue");
                 }
 
             }
         });
-        
-        
+
+
         //display the friendtable 
         $.ajax({
             async: true,
@@ -90,20 +91,22 @@
         //             }
         //         });
         //     });
-        
-            $("#addFriend").click(function() {
+
+        $("#addFriend").click(function() {
             $.ajax({
                 async: true,
                 type: "post",
                 url: 'data/addfriend',
-                data: {friend:$("#addFriendt").val(),flag :'addFriend'
+                data: {
+                    friend: $("#addFriendt").val(),
+                    flag: 'addFriend'
                 },
                 success: function(response) {
                     alert(response);
-                    }
-                });
+                }
             });
-            $("#yes").click(function() {
+        });
+        $("#yes").click(function() {
             // $.ajax({
             //     async: true,
             //     type: "post",
@@ -114,31 +117,34 @@
             //         alert(response);
             //         }
             //     });
-            });
-            $("#no").click(function() {
+        });
+        $("#no").click(function() {
             $.ajax({
                 async: true,
                 type: "post",
                 url: 'data/refusefriend',
-                data: {friend:$("#").val(),
+                data: {
+                    friend: $("#").val(),
                 },
                 success: function(response) {
                     alert(response);
-                    }
-                });
+                }
             });
-            $("#deleteFriend").click(function() {
+        });
+        $("#deleteFriend").click(function() {
             $.ajax({
                 async: true,
                 type: "post",
                 url: 'data/refusefriend',
-                data: {friend:$("#deleteFriendt").val(),flag :'deleteFriend'
+                data: {
+                    friend: $("#deleteFriendt").val(),
+                    flag: 'deleteFriend'
                 },
                 success: function(response) {
                     alert(response);
-                    }
-                });
+                }
             });
+        });
         //     $("#talkFriend").click(function() {
         //     alert("talkFriend");
         //     // $.ajax({
@@ -175,10 +181,27 @@
         //     //         }
         //     //     });
         //     });
-      $("#notice").click(function(){
-  $("#invite_list").toggle(500);
-  });
-    
+        $("#notice").click(function() {
+            $("#invite_list").toggle(500);
+        });
+        $.ajax({
+            async: true,
+            type: "post",
+            url: 'article/loadArticle',
+            data: {},
+            success: function(response) {
+                var obj = JSON.parse(response);
+                var res = "";
+                $('.friendList').remove();
+                for (var val in obj) {
+                    res = res + val + " : " + obj[val] + "\n";
+                    // alert(obj[val]);
+                 // obj[val][0]帳號  obj[val][1]時間  obj[val][2]標題  obj[val][3]內容
+                    $('#articletest').append(" <h3>"+obj[val][2]+"</h3><h5>"+obj[val][0]+" / "+ obj[val][1]+"</h5><textarea rows='4' cols='20' readonly='readonly'>"+obj[val][3]+"</textarea><input type='input name=''/>");
+                }
+                
+                
+            }
+        });
+
     });
-    
-    
