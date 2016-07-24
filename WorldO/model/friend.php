@@ -11,6 +11,11 @@
             Server::setConnect();
         }
         
+        
+        #======================================================================#
+        #getFriendList($loginAccount) 回傳帳戶的好友名單                       #
+        #======================================================================#
+        
         function getFriendList($loginAccount){
             $sql = "SELECT `friendAccount` FROM `userFriend`
             where `userAccount` = '{$loginAccount}' and isfriend = true ";
@@ -24,9 +29,9 @@
             return $res;
         }
          
-        function getFriendStatus($inviteAccount, $playerAccount){
-             
-        }
+        #======================================================================#
+        #getFriendInvite($userAccount)獲取帳戶好友邀請資訊                     #
+        #======================================================================#
         
         function getFriendInvite($userAccount){
             $sql="select `friendAccount` from `userFriend` where `userAccount` =  '$userAccount' and `isfriend` = 0";
@@ -40,13 +45,12 @@
             return $res;
             
         }
-         
-        function getWhoInviteMe($playerAccount){
-            
-        }
-         
-                
-        #addFriend($myAccount,$friendAccount)新增好友
+        
+        
+        #======================================================================#
+        #addFriend($myAccount,$friendAccount) 新增好友                         #
+        #======================================================================#
+        
         public function addFriend($myAccount,$friendAccount){
             $sql="select `pAccount` from `account` where `pAccount` =  '$friendAccount'";
             $result = mysqli_query(Server::$worldO,$sql);
@@ -63,8 +67,11 @@
                     echo "no person";
                 }
         }
+        
+        #======================================================================#
+        #acceptInvite($myAccount,$friendAccount) 接受好友邀請                  #
+        #======================================================================#
             
-        #acceptInvite($myAccount,$friendAccount) 接受好友邀請
         function acceptInvite($myAccount,$friendAccount){
              $sql="UPDATE  `worldO`.`userFriend` SET  `isfriend` =  '1' WHERE  `userFriend`.`userAccount` =  '$myAccount' AND  `userFriend`.`friendAccount` =  '$friendAccount';";
              if(mysqli_query(Server::$worldO,$sql))
@@ -73,7 +80,12 @@
             
             
         }
-        #deleteFriend($myAccount,$friendAccount)刪除好友 
+        
+        
+        #======================================================================#
+        #deleteFriend($myAccount,$friendAccount)刪除好友                       #
+        #======================================================================#
+        
         function deleteFriend($myAccount,$friendAccount){
                 $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$myAccount' AND `userFriend`.`friendAccount` = '$friendAccount'";
                 mysqli_query(Server::$worldO,$sel);

@@ -2,7 +2,11 @@
 
     class userData{
         
-        private $userData;
+                
+        #======================================================================#
+        #建構子重新設定SESSION資料                                             #
+        #======================================================================#
+            
         public function __construct($userName){
             Server::setConnect();
             $sql = "SELECT * FROM `account` where `pAccount` = '$userName'";
@@ -13,6 +17,11 @@
              }
         }
         
+                
+        #======================================================================#
+        #changeData($userData) 更新帳戶個人資料                                #
+        #======================================================================#
+            
         public function changeData($userData){
             $sql = "UPDATE  `worldO`.`account` SET  `pPassword` =  '{$userData['newPassword']}',
 `englishName` =  '{$userData['englishName']}',

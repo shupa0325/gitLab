@@ -1,5 +1,9 @@
 <?php
-
+    
+        #======================================================================#
+        #Controller 基本類別                                                   #
+        #======================================================================#
+        
 class Controller {
     public function model($model,$data = null){
         require_once "model/$model.php";
@@ -13,10 +17,6 @@ class Controller {
     public function script($name){
         echo '<script src="/WorldO/js/'.$name.'.js"></script>';
     }
-    
-    // public function image($name){
-    //     echo '<link rel="icon" href="/World/images/'.$name.'.ico" type="image/x-icon" />';
-    // }
     
     public function view($view, $data = Array()) {
         require_once "views/$view.php";

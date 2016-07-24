@@ -1,30 +1,30 @@
+    //http://abgne.tw/jquery/apply-jquery/scrollbar-scroll-to-bottom-event.html
+    //http://stackoverflow.com/questions/12650170/how-to-scroll-down-jquery
+    //
     function noticeTimer() {
 
-        //find if has invited by other Account
+        //自動偵測是否有人發出好友邀請，若有則發出提醒。此處包含接受以及拒絕好友邀請
         $.ajax({
             async: true,
             type: "post",
             url: 'friend/invitedfriend',
             data: {},
             success: function(response) {
-                if (response != ' null') {
+                if (response != 'null') {
 
                     var obj = JSON.parse(response);
                     var res = "";
-
+                    $("#notice").css("color", "red");
                     for (var val in obj) {
                         res = res + val + " : " + obj[val] + "\n";
-                        $('td,tr').remove();
-                        $("#notice").css("color", "red");
-                        // $("#noticeTable").remove();
-                        $("#noticeTable").append("<tr id=" + obj[val] + "class='noticeList'><td>" + obj[val] + "</td><td><button onclick='javascript:alert('abc')' id='yes' name=" + obj[val] + ">yes</button></td><td><button  class='no' name=" + obj[val] + "_no>no</button></td></tr>");
-
+                       $('td,tr').remove();
+                        $("#noticeTable").append("<tr id=" + obj[val] + "class='noticeList'><td>" + obj[val] + "</td><td><button onclick='javascript:alert('abc')' id='yes' name=" + obj[val] + ">yes</button></td><td><button  id='no' class='no' name=" + obj[val] + "_no>no</button></td></tr>");
                     }
-
+                    //接受好友邀請
                     $('#yes').click(function() {
                         $.ajax({
                             async: true,
-                            type: "post",
+                            type: 'POST',
                             url: 'friend/acceptfriend',
                             data: {
                                 friend: $(this).prop("name"),
@@ -36,7 +36,7 @@
 
                     });
 
-                    
+                    //拒絕好友邀請
                     $("#no").click(function() {
                         $.ajax({
                             async: true,
@@ -50,12 +50,9 @@
                             }
                         });
                     });
-                    
-                    
-                    
                 }
                 else {
-                    $("#notice").css("color", "blue");
+                    $("#notice").css("color", "gray");
                 }
 
             }
@@ -80,8 +77,11 @@
                     res = res + val + " : " + obj[val] + "\n";
 
                     $('#friendTalk').append("<option id='" + obj[val] + "' class='friendList'>" + obj[val] + '</option>');
-                    $("#" + obj[val]).click(function() {
-                        $('#showtext').html("<textarea rows='4' cols='20' readonly='readonly' >TEST</textarea><input type='text' id='output' name='output' value=''>");
+                    $('option').click(function() {
+                       //$('#showtext').remove();
+                        $("#result").html(obj[val]);
+                        $("#showbox").remove();
+                        $('#showtext').html("<div id=showbox><textarea rows='4' cols='20' readonly='readonly' >"+obj[val]+"</textarea><br><input type='text' id='output' name='output' value=''></div>");
                     });
                 }
             }
@@ -90,11 +90,33 @@
     }
 
     $(document).ready(function() {
+        
+        // |======================================================================#
+        // |設定一個Timer                                                         #
+        // |======================================================================#
+        
         noticeTimer();
+        
+        // |======================================================================#
+        // |連結到個人資料編輯頁面                                                #
+        // |======================================================================#
+        
         $("#personData").click(function() {
              window.location.href = 'data/editData';  
             });
-
+        
+        // |======================================================================#
+        // |進入我的文章頁面                                                      #
+        // |======================================================================#
+        
+         $("#myarticle").click(function() {
+            window.location.href = 'article/myArticle';  
+        });
+        
+        // |======================================================================#
+        // |新增好友功能                                                          #
+        // |======================================================================#
+        
         $("#addFriend").click(function() {
             $.ajax({
                 async: true,
@@ -109,6 +131,11 @@
                 }
             });
         });
+        
+        // |======================================================================#
+        // |刪除好友功能                                                          #
+        // |======================================================================#
+              
       
         $("#deleteFriend").click(function() {
             $.ajax({
@@ -124,46 +151,20 @@
                 }
             });
         });
-        //     $("#talkFriend").click(function() {
-        //     alert("talkFriend");
-        //     // $.ajax({
-        //     //     async: true,
-        //     //     type: "post",
-        //     //     url: 'controllers/userController.php',
-        //     //     data: {
-        //     //     },
-        //     //     success: function(response) {
-        //     //         }
-        //     //     });
-        //     });
-        //     $("#newArticle").click(function() {
-        //     alert(("#articlecontent").val());
-        //     // $.ajax({
-        //     //     async: true,
-        //     //     type: "post",
-        //     //     url: 'controllers/userController.php',
-        //     //     data: {
-        //     //     },
-        //     //     success: function(response) {
-        //     //         }
-        //     //     });
-        //     });
-        //     $("#deleteArticle").click(function() {
-        //     alert("deleteArticle");
-        //     // $.ajax({
-        //     //     async: true,
-        //     //     type: "post",
-        //     //     url: 'controllers/userController.php',
-        //     //     data: {
-        //     //     },
-        //     //     success: function(response) {
-        //     //         }
-        //     //     });
-        //     });
+        
+        // |======================================================================#
+        // |開啟好友邀請清單                                                      #
+        // |======================================================================#
+        
         $("#notice").click(function() {
             $("#invite_list").toggle(500);
         });
-        $('#articletest form').remove();//先移除之前的form
+        
+        // |======================================================================#
+        // |顯示帳戶與帳戶好友的文章                                              #
+        // |======================================================================#
+        
+        // $('#articletest form').remove();//先移除之前的form
         $.ajax({
             async: true,
             type: "post",
@@ -183,6 +184,10 @@
                 
             }
         });
+        // |======================================================================#
+        // |發出留言                                                              #
+        // |======================================================================#
+        
         $("input").keydown(function (event) {
         if (event.which == 13) {
            $.ajax({
@@ -196,5 +201,8 @@
         });
         }
     });
+       
+        
+
 
     });
