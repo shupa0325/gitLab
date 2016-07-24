@@ -7,11 +7,11 @@
     <head>
         <?PHP include_once('config.php'); ?>
         <?= $this->script('userCmd') ?>
-<style type="text/css">
-    .container{
-        width:1170px;
-    }
-</style>
+    <style type="text/css">
+        .container{
+            width:1170px;
+        }
+    </style>
     </head>
 <!--background: url('image/homepage.jpg') no-repeat center center fixed;background-size:cover;-->
     <body style="background-color:#5599FF; ">
@@ -21,7 +21,7 @@
         <BR>
         <BR>
         <div class="left col-xs-3">
-            <form>
+            <form id = "person">
                 <tr>
                     <input type="button" id="personData" name="personData" value="personData"></button>
                     <br><br>
@@ -57,7 +57,7 @@
         </div>
         <div class="middle col-xs-6">
             <div class="container1">
-                <form action="article/newArticle" method="POST">
+                <form  action="article/newArticle" method="POST">
                     <tr>
                         標題 : <input type="text" id="articletitle" name="articletitle" maxlength="30" required/>
                         <BR>文章內容:

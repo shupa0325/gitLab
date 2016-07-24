@@ -1,9 +1,9 @@
 <?php
 
 class Controller {
-    public function model($model) {
+    public function model($model,$data = null){
         require_once "model/$model.php";
-        return new $model();
+        return new $model($data);
     }
     
     public function css($name){

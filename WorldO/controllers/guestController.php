@@ -1,5 +1,4 @@
 <?php
-    session_start();
     class guestController extends Controller{
         
         

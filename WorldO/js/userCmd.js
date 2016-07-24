@@ -4,7 +4,7 @@
         $.ajax({
             async: true,
             type: "post",
-            url: 'data/invitedfriend',
+            url: 'friend/invitedfriend',
             data: {},
             success: function(response) {
                 if (response != ' null') {
@@ -25,7 +25,7 @@
                         $.ajax({
                             async: true,
                             type: "post",
-                            url: 'data/acceptfriend',
+                            url: 'friend/acceptfriend',
                             data: {
                                 friend: $(this).prop("name"),
                             },
@@ -36,7 +36,23 @@
 
                     });
 
-
+                    
+                    $("#no").click(function() {
+                        $.ajax({
+                            async: true,
+                            type: "post",
+                            url: 'friend/refusefriend',
+                            data: {
+                                friend: $(this).prop("name"),
+                            },
+                            success: function(response) {
+                                $("#noticeTable").hide();
+                            }
+                        });
+                    });
+                    
+                    
+                    
                 }
                 else {
                     $("#notice").css("color", "blue");
@@ -50,7 +66,7 @@
         $.ajax({
             async: true,
             type: "post",
-            url: 'data/displayFriend',
+            url: 'friend/displayFriend',
             data: {
                 userName: $("#userName").val(),
                 flag: 'friendTable'
@@ -75,28 +91,15 @@
 
     $(document).ready(function() {
         noticeTimer();
-        // $("#personData").click(function() {
-        //     $.ajax({
-        //         async: true,
-        //         type: "post",
-        //         url: 'controllers/userController.php',
-        //         data: {userName : 'shupa_tsai0325',flag :'personData'},
-        //         success: function(response) {
-        //             var obj = JSON.parse(response);
-        //             var res ="";
-        //             for(var val in obj){
-        //                 res =res + val + " : " +  obj[val] + "\n";
-        //             }
-        //             alert(res);
-        //             }
-        //         });
-        //     });
+        $("#personData").click(function() {
+             window.location.href = 'data/editData';  
+            });
 
         $("#addFriend").click(function() {
             $.ajax({
                 async: true,
                 type: "post",
-                url: 'data/addfriend',
+                url: 'friend/addfriend',
                 data: {
                     friend: $("#addFriendt").val(),
                     flag: 'addFriend'
@@ -106,36 +109,12 @@
                 }
             });
         });
-        $("#yes").click(function() {
-            // $.ajax({
-            //     async: true,
-            //     type: "post",
-            //     url: 'data/acceptfriend',
-            //     data: {friend:$("#").val(),
-            //     },
-            //     success: function(response) {
-            //         alert(response);
-            //         }
-            //     });
-        });
-        $("#no").click(function() {
-            $.ajax({
-                async: true,
-                type: "post",
-                url: 'data/refusefriend',
-                data: {
-                    friend: $("#").val(),
-                },
-                success: function(response) {
-                    alert(response);
-                }
-            });
-        });
+      
         $("#deleteFriend").click(function() {
             $.ajax({
                 async: true,
                 type: "post",
-                url: 'data/refusefriend',
+                url: 'friend/refusefriend',
                 data: {
                     friend: $("#deleteFriendt").val(),
                     flag: 'deleteFriend'
@@ -184,6 +163,7 @@
         $("#notice").click(function() {
             $("#invite_list").toggle(500);
         });
+        $('#articletest form').remove();//先移除之前的form
         $.ajax({
             async: true,
             type: "post",
@@ -197,11 +177,24 @@
                     res = res + val + " : " + obj[val] + "\n";
                     // alert(obj[val]);
                  // obj[val][0]帳號  obj[val][1]時間  obj[val][2]標題  obj[val][3]內容
-                    $('#articletest').append(" <h3>"+obj[val][2]+"</h3><h5>"+obj[val][0]+" / "+ obj[val][1]+"</h5><textarea rows='4' cols='20' readonly='readonly'>"+obj[val][3]+"</textarea><input type='input name=''/>");
+                    $('#articletest').append("<form class='article' role='form'> <h3>"+obj[val][2]+"</h3><h5>"+obj[val][0]+" <br> "+ obj[val][1]+"</h5><textarea rows='4' cols='20' readonly='readonly'style='background:inherit' >"+obj[val][3]+"</textarea><br><input type='input id='Comment'/></form>");
                 }
                 
                 
             }
         });
+        $("input").keydown(function (event) {
+        if (event.which == 13) {
+           $.ajax({
+            async: true,
+            type: "post",
+            url: 'article/updateMessage',
+            data: {},
+            success: function(response) {
+                
+            }
+        });
+        }
+    });
 
     });

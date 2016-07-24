@@ -1,0 +1,24 @@
+    /home/ubuntu/workspace/WorldO/views/personData.php:9:
+array(10) {
+  'username' =>
+  string(9) "shupa0325"
+  'pAccount' =>
+  string(9) "shupa0325"
+  'pPassword' =>
+  string(14) "shupa_tsai0325"
+  'chineseName' =>
+  string(9) "蔡承軒"
+  'englishName' =>
+  string(10) "Shupa_Tsai"
+  'birthday' =>
+  string(10) "1994-03-25"
+  'email' =>
+  string(21) "fir325ss@yahoo.com.tw"
+  'phoneNumber' =>
+  string(9) "986520551"
+  'address' =>
+  string(21) "台中市中佑集團"
+  'test' =>
+  string(5) "hello"
+}
+      

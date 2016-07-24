@@ -2,7 +2,6 @@
 class Article{
     
         function __construct(){
-            require_once "Server.php";
             Server::setConnect();
         }
         
@@ -34,10 +33,16 @@ class Article{
         }
         
         function updateArticle(){
+            $sql ="INSERT INTO `worldO`.`article` (`ID`, `userName`, `articleName`, `competence`, `content`, `message`, `issuetime`) 
+            VALUES (NULL, '$userAccount', '{$article['articletitle']}', NULL, ' {$article['articlecontent']}', '', CURRENT_TIMESTAMP)";
+            return mysqli_query(Server::$worldO,$sql);
             
         }
         
         function deleteArticle(){
+            
+        }
+        function updateMessage(){
             
         }
         

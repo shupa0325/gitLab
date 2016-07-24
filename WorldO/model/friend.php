@@ -8,7 +8,6 @@
         public $datetime;
      
         function __construct(){
-            require_once "Server.php";
             Server::setConnect();
         }
         

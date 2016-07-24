@@ -1,7 +1,4 @@
-<?php session_start();
-header("Content-Type:text/html; charset=utf-8");
-require_once "Server.php";
-    
+<?php 
     #管理資料庫設定，檢查帳號重複性、創建帳號 
     class databaseManager {
         public function __construct() {

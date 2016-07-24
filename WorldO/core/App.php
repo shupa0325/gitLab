@@ -9,6 +9,7 @@ class App {
         //$controllerName會等於C資料夾內的某項Controller的名字
         $controllerName = "{$url[0]}Controller";
         
+        //如果導入為首頁，則自動導向guestController
         if(!$url)
         $controllerName = "guestController";
         

@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     class articleController extends Controller{
         function loadArticle(){
             $load = $this -> model("Article");
@@ -8,7 +8,7 @@
         }
         function newArticle(){
             $load = $this -> model("Article");
-           if(!$load->newArticle($_SESSION['username'],$_POST))
+           if($load->newArticle($_SESSION['username'],$_POST))
            {
               echo "成功";
               header("refresh:1;/WorldO/");
