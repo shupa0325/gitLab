@@ -1,13 +1,13 @@
     //http://abgne.tw/jquery/apply-jquery/scrollbar-scroll-to-bottom-event.html
     //http://stackoverflow.com/questions/12650170/how-to-scroll-down-jquery
-    //
+    //  
     function noticeTimer() {
 
         //自動偵測是否有人發出好友邀請，若有則發出提醒。此處包含接受以及拒絕好友邀請
         $.ajax({
             async: true,
             type: "post",
-            url: 'friend/invitedfriend',
+            url: '/WorldO/friend/invitedfriend',
             data: {},
             success: function(response) {
                 if (response != 'null') {
@@ -25,11 +25,12 @@
                         $.ajax({
                             async: true,
                             type: 'POST',
-                            url: 'friend/acceptfriend',
+                            url: '/WorldO/friend/acceptfriend',
                             data: {
                                 friend: $(this).prop("name"),
                             },
                             success: function(response) {
+                                window.location.reload()
                                 $("#noticeTable").hide();
                             }
                         });
@@ -41,7 +42,7 @@
                         $.ajax({
                             async: true,
                             type: "post",
-                            url: 'friend/refusefriend',
+                            url: '/WorldO/friend/refusefriend',
                             data: {
                                 friend: $(this).prop("name"),
                             },
@@ -59,11 +60,15 @@
         });
 
 
-        //display the friendtable 
+        // |======================================================================#
+        // |偵測並更新好友名單                                                    #
+        // |======================================================================#
+        
+        
         $.ajax({
             async: true,
             type: "post",
-            url: 'friend/displayFriend',
+            url: '/WorldO/friend/displayFriend',
             data: {
                 userName: $("#userName").val(),
                 flag: 'friendTable'
@@ -77,16 +82,77 @@
                     res = res + val + " : " + obj[val] + "\n";
 
                     $('#friendTalk').append("<option id='" + obj[val] + "' class='friendList'>" + obj[val] + '</option>');
+                     //好友被點擊事件
                     $('option').click(function() {
                        //$('#showtext').remove();
-                        $("#result").html(obj[val]);
+                        //$("#result").html(obj[val]);
                         $("#showbox").remove();
-                        $('#showtext').html("<div id=showbox><textarea rows='4' cols='20' readonly='readonly' >"+obj[val]+"</textarea><br><input type='text' id='output' name='output' value=''></div>");
+                        $('#showtext').html("<div id=showbox><textarea id='msgbox'rows='4' cols='20' readonly='readonly' ></textarea><br><input type='text' id='output' name='output' value=''></div>");
+                    
+                    
+         // |======================================================================#
+         // |顯示聊天訊息                                                          #
+         // |======================================================================#
+      
+                        
+                        $.ajax({
+                            async: true,
+                            type: "post",
+                            url: '/WorldO/data/getMessage',
+                            data: {friend:$(this).prop("id")},
+                            success: function(response) {
+                            $("#msgbox").html(response.trim());
+                            //alert(response);
+                            }
+                        });
+        // |======================================================================#
+        // |設定訊息為已讀                                                        #
+        // |======================================================================#            
+                        $.ajax({
+                            async: true,
+                            type: "post",
+                            url: '/WorldO/data/setRead',
+                            data: {friend:$(this).prop("id")},
+                            success: function(response) { }
+                        });
+                        
+                        
+                        
                     });
                 }
             }
         });
-        setTimeout(noticeTimer, 4000);
+        
+        
+        // |======================================================================#
+        // |偵測並更新未讀訊息                                                    #
+        // |======================================================================#
+        
+        $.ajax({
+            async: true,
+            type: "post",
+            url: '/WorldO/data/isMessage',
+            data: {},
+            success: function(response) {
+                var obj = JSON.parse(response);
+                    var res = "";
+                    for (var val in obj) {
+                        res = res + val + " : " + obj[val] + "\n";
+                        //alert(obj[val]);
+                        $('#'+obj[val]).css("color","red");
+                    }
+                
+                
+                //alert(response);
+            }
+        });
+        
+        
+        
+        
+        
+        
+        setTimeout(noticeTimer, 1000);
     }
 
     $(document).ready(function() {
@@ -121,13 +187,13 @@
             $.ajax({
                 async: true,
                 type: "post",
-                url: 'friend/addfriend',
+                url: '/WorldO/friend/addfriend',
                 data: {
                     friend: $("#addFriendt").val(),
                     flag: 'addFriend'
                 },
                 success: function(response) {
-                    alert(response);
+                    //alert(response);
                 }
             });
         });
@@ -141,13 +207,13 @@
             $.ajax({
                 async: true,
                 type: "post",
-                url: 'friend/refusefriend',
+                url: '/WorldO/friend/refusefriend',
                 data: {
                     friend: $("#deleteFriendt").val(),
                     flag: 'deleteFriend'
                 },
                 success: function(response) {
-                    alert(response);
+                    //alert(response);
                 }
             });
         });
@@ -168,7 +234,7 @@
         $.ajax({
             async: true,
             type: "post",
-            url: 'article/loadArticle',
+            url: '/WorldO/article/loadArticle',
             data: {},
             success: function(response) {
                 var obj = JSON.parse(response);
@@ -178,31 +244,35 @@
                     res = res + val + " : " + obj[val] + "\n";
                     // alert(obj[val]);
                  // obj[val][0]帳號  obj[val][1]時間  obj[val][2]標題  obj[val][3]內容
-                    $('#articletest').append("<form class='article' role='form'> <h3>"+obj[val][2]+"</h3><h5>"+obj[val][0]+" <br> "+ obj[val][1]+"</h5><textarea rows='4' cols='20' readonly='readonly'style='background:inherit' >"+obj[val][3]+"</textarea><br><input type='input id='Comment'/></form>");
+                    $('#articletest').append("<form id="+obj[val][4]+" class='article' role='form'> <h3>"+obj[val][2]+"</h3><h5>"+obj[val][0]+" <br> "+ obj[val][1]+"</h5><textarea rows='4' cols='20' readonly='readonly'style='background:inherit' >"+obj[val][3]+"</textarea><br><input type='input id='Comment'/></form>");
                 }
                 
                 
             }
         });
         // |======================================================================#
-        // |發出留言                                                              #
+        // |發出訊息給好友，傳出資料為好友帳號以及訊息內容，                      #
         // |======================================================================#
         
-        $("input").keydown(function (event) {
-        if (event.which == 13) {
-           $.ajax({
-            async: true,
-            type: "post",
-            url: 'article/updateMessage',
-            data: {},
-            success: function(response) {
-                
+        $("#output").keydown(function (event) {
+            alert("sdf");
+            if (event.which == 13) {
+            //   $.ajax({
+            //     async: true,
+            //     type: "post",
+            //     url: '/WorldO/data/sendMessage',
+            //     data: {friend : '', message : $(this).val()},
+            //     success: function(response) {
+            //         alert("hello");
+                    
+                    
+            //     }
+            // });
             }
         });
-        }
-    });
+        
+        
+        
        
         
-
-
     });

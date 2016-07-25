@@ -2,7 +2,7 @@
     
     class articleController extends Controller{
         #======================================================================#
-        #myArticle() 查看我的文章                                          #
+        #myArticle() 查看我的文章                                              #
         #======================================================================#
         function myArticle(){
             $this -> view("userArticle"); 
@@ -40,15 +40,28 @@
            }
         } 
         #======================================================================#
-        #updataArticle()  修改文章                                             #
+        #updateArticle()  修改文章                                             #
         #======================================================================#
-        function updataArticle(){
+        function updateArticle(){
+            $update = $this -> model("Article");
+            if($update ->updateArticle($_POST["articleName"],$_POST["content"],$_SESSION['username'],$_POST["id"])){
+                echo "成功";
+            }else{
+                echo "失敗";
+            }
+            
         }
         
         #======================================================================#
         #deleteArticle()  刪除文章                                             #
         #======================================================================#
         function deleteArticle(){
+            $delete = $this -> model("Article");
+            if($delete ->deleteArticle($_SESSION['username'],$_POST['id'])){
+                echo true;
+            }else{
+                echo false;
+            }
         }
         
     }

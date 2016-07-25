@@ -47,10 +47,6 @@
                 <br><br>
             </TR>
 
-            <tr>
-                <input type="button" id="deleteArticle" name="deleteArticle" value="deleteArticle"></button>
-                <br><br>
-            </TR>
         </form>
     </div>
     <div class="middle col-xs-6">
@@ -92,11 +88,16 @@
 
     </div>
     <div class="right col-xs-3 float:right">
+        <form method = "POST" action = "data/sendMessage">
+        訊息:    <input type="text" name="message"/><br>
+        好友:    <input type="text" name="friend"/>
+            <input type="submit" value="Submit"/>
+        </form>
         <form>
             <tr>
                 <td>
                     <div>
-                        <div id="result">Hello! </div>
+                        <div id="result">Messager</div>
                         <p id='showtext'>
                             <div>
                                 <div>

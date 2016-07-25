@@ -1,12 +1,7 @@
 <?php
 
     class friend{
-        public $id;
-        public $invite;
-        public $friend;
-        public $status;
-        public $datetime;
-     
+
         function __construct(){
             Server::setConnect();
         }

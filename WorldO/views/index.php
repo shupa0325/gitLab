@@ -6,7 +6,7 @@
         <?= $this->script('homepage') ?>
     </head>
 
-    <body style="background-color:#5599FF; background: url('/WorldO/image/homepage.jpg') no-repeat center center fixed;background-size:cover;">
+    <body style="background-color:#5599FF; ">
         <div id="allpage">
             <?php include_once ("title.php");?>
 
@@ -46,7 +46,7 @@
             <tr>
                 <td width="80" align="center" valign="baseline">*帳號</td>
                 <td valign="baseline">
-                    <input type="text" name="pAccount" id="pAccount" maxlength="20" value="shupa0325" required/>
+                    <input type="text" name="pAccount" id="pAccount" maxlength="20" value="" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline"></td>
@@ -56,7 +56,7 @@
             <tr>
                 <td width="80" align="center" valign="baseline">*密碼</td>
                 <td valign="baseline">
-                    <input type="password" name="pPassword" id="pPassword" maxlength="20" value="ssssssss" required/>
+                    <input type="password" name="pPassword" id="pPassword" maxlength="20" value="" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline"></td>
@@ -66,7 +66,7 @@
             <tr>
                 <td width="80" align="center" valign="baseline">*密碼確認</td>
                 <td valign="baseline">
-                    <input type="password" name="pwdCheck" id="pwdCheck" maxlength="20" value="ssssssss" required />
+                    <input type="password" name="pwdCheck" id="pwdCheck" maxlength="20" value="" required />
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline"></td>
@@ -76,12 +76,12 @@
             <tr>
                 <td width="80" align="center" valign="baseline">*姓名</td>
                 <td valign="baseline">
-                    <input type="text" name="chineseName" id="chineseName" maxlength="5" value="蔡承軒" required/>
+                    <input type="text" name="chineseName" id="chineseName" maxlength="5" value="" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline">英文姓名</td>
                 <td valign="baseline">
-                    <input type="text" name="englishName" id="englishName" maxlength="20" value="Shupa" />
+                    <input type="text" name="englishName" id="englishName" maxlength="20" value="" />
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline" >生日</td>
@@ -91,7 +91,7 @@
             <tr>
                 <td width="80" align="center" valign="baseline">*電子郵件</td>
                 <td valign="baseline">
-                    <input type="email" name="email" id="email" maxlength="30" value="fir325vm0@gmail.com" required/>
+                    <input type="email" name="email" id="email" maxlength="30" value="" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline">電話</td>

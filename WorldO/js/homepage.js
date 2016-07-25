@@ -99,7 +99,7 @@ $(document).ready(function() {
 });
 
 function checkdataAccount(str){
-     var checkdata = /^[A-Za-z_][A-Za-z0-9_]{8,15}$/;
+     var checkdata = /^[A-Za-z_][A-Za-z0-9_]{7,15}$/;
      return checkdata.test(str);
 }
 

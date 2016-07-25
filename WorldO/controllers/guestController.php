@@ -28,7 +28,7 @@
             else{
             echo "<script>alert('false');</script>";
             echo $check ->loginAccount($_POST["inputAccount"],$_POST["inputPassword"]);
-            echo $_POST["inputAccount"].$_POST["inputPassword"];
+
             }
             $check->close();
         }

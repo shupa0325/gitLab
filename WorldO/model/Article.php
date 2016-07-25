@@ -22,7 +22,7 @@ class Article{
         
         function loadArticle($userAccount){
             
-        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content` FROM `article` where `userName` like '$userAccount' or `userName` in (SELECT  `friendAccount` 
+        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content`,`ID` FROM `article` where `userName` like '$userAccount' or `userName` in (SELECT  `friendAccount` 
                 FROM  `userFriend` 
                 WHERE  `userAccount` =  '$userAccount') ORDER BY  `article`.`issuetime` DESC  limit 6";
         $result = mysqli_query(Server::$worldO,$sql);//所有相關文章資料
@@ -46,9 +46,7 @@ class Article{
                 
         function loadmyArticle($userAccount){
             
-        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content` FROM `article` where `userName` like '$userAccount' or `userName` in (SELECT  `friendAccount` 
-                FROM  `userFriend` 
-                WHERE  `userAccount` =  '$userAccount') ORDER BY  `article`.`issuetime` DESC  limit 6";
+        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content`,`ID` FROM `article` where `userName` like '$userAccount' ORDER BY  `article`.`issuetime` DESC  limit 6";
         $result = mysqli_query(Server::$worldO,$sql);//所有相關文章資料
         $res;
         $i=0;
@@ -68,9 +66,8 @@ class Article{
         #updateArticle() 更新文章資料                                          #
         #======================================================================#
         
-        function updateArticle(){
-            $sql ="INSERT INTO `worldO`.`article` (`ID`, `userName`, `articleName`, `competence`, `content`, `message`, `issuetime`) 
-            VALUES (NULL, '$userAccount', '{$article['articletitle']}', NULL, ' {$article['articlecontent']}', '', CURRENT_TIMESTAMP)";
+        function updateArticle($articleName,$content,$username,$id){
+            $sql ="UPDATE `worldO`.`article` SET `articleName` = '$articleName', `content` = '$content' WHERE `article`.`ID` = $id  and `userName` = '$username'";
             return mysqli_query(Server::$worldO,$sql);
             
         }
@@ -79,7 +76,9 @@ class Article{
         #deleteArticle() 刪除文章                                              #
         #======================================================================#
         
-        function deleteArticle(){
+        function deleteArticle($username,$id){
+            $sql = "DELETE FROM `worldO`.`article` WHERE `article`.`ID` = $id and `userName` = '$username'";
+            return mysqli_query(Server::$worldO,$sql);
             
         }
         
@@ -98,5 +97,6 @@ class Article{
         function loadMessage(){
             
         }
+        
 }
 ?>
