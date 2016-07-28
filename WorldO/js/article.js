@@ -73,7 +73,7 @@ $(document).ready(function() {
                 async: true,
                 type: "post",
                 url: '/WorldO/article/deleteArticle',
-                data: {id:$(this).prop("name")},//幫我給ID
+                data: {id:$(this).prop("name")},
                 success: function(response) {
                         //alert(response);
                         if(response==true){

@@ -12,7 +12,7 @@
         #======================================================================#
         function loadmyArticle(){
             $load = $this -> model("Article");
-            echo $load -> loadmyArticle($_SESSION['username']);
+            $this ->view("ajaxReturn",$load -> loadmyArticle());
         }
         
         #======================================================================#
@@ -21,34 +21,26 @@
         
         function loadArticle(){
             $load = $this -> model("Article");
-            echo $load -> loadArticle($_SESSION['username']);
-            
+            $this ->view("ajaxReturn",$load -> loadArticle());
         }
         
         #======================================================================#
         #newArticle()  新增文章                                                #
         #======================================================================#
+        
         function newArticle(){
             $load = $this -> model("Article");
-           if($load->newArticle($_SESSION['username'],$_POST))
-           {
-              echo "成功";
-              header("refresh:1;/WorldO/");
-           }else{
-              echo "失敗";
-              header("refresh:1;/WorldO/");
-           }
+            header("location:/WorldO/");
         } 
+        
         #======================================================================#
         #updateArticle()  修改文章                                             #
         #======================================================================#
         function updateArticle(){
             $update = $this -> model("Article");
-            if($update ->updateArticle($_POST["articleName"],$_POST["content"],$_SESSION['username'],$_POST["id"])){
-                echo "成功";
-            }else{
-                echo "失敗";
-            }
+            $update ->updateArticle($_POST["articleName"],$_POST["content"],$_POST["id"]);
+            header("location:/WorldO/article/myArticle");
+ 
             
         }
         
@@ -57,11 +49,7 @@
         #======================================================================#
         function deleteArticle(){
             $delete = $this -> model("Article");
-            if($delete ->deleteArticle($_SESSION['username'],$_POST['id'])){
-                echo true;
-            }else{
-                echo false;
-            }
+            $this ->view("ajaxReturn",$delete ->deleteArticle($_POST['id']));
         }
         
     }
