@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <?php include_once('config.php'); ?>
+    <?php require_once('config.php'); ?>
     <?php $this->script('userCmd') ?>
     <style type="text/css">
         .container {

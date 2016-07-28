@@ -18,19 +18,12 @@
         
         public function loginAccount(){
             $check = $this->model("databaseManager");
+        
+            $_SESSION['username']=($check ->loginAccount($_POST["inputAccount"],$_POST["inputPassword"]) == 3)?
+            $_POST["inputAccount"]:NULL;
             
-            if($check ->loginAccount($_POST["inputAccount"],$_POST["inputPassword"]) == 3)
-            {
-            $_SESSION['username']= $_POST["inputAccount"];
-            echo "<script>alert('success');</script>";
-            header("refresh:1;/WorldO/");
-            }
-            else{
-            echo "<script>alert('false');</script>";
-            header("refresh:1;/WorldO/");
-
-            }
-            $check->close();
+            header("location:/WorldO/");
+            
         }
         
         #======================================================================#
@@ -40,15 +33,10 @@
         public function createAccount(){
             $createAcc = $this->model("databaseManager");
             
-            if($createAcc->createAccount($_POST))
-            {   
-                echo "<script>alert('success');</script>";
-                header("refresh:1;/WorldO/");
-            }
-            else{
-                echo "<script>alert('false');</script>";
-                header("refresh:1;/WorldO/");
-            }
+            $createAcc->createAccount($_POST);
+            header("location:/WorldO/");
+
+
         }
         
         #======================================================================#

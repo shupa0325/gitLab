@@ -11,7 +11,7 @@
             data: {},
             success: function(response) {
                 if (response != 'null') {
-
+                    // alert(response);
                     var obj = JSON.parse(response);
                     var res = "";
                     $("#notice").css("color", "red");
