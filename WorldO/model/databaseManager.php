@@ -3,14 +3,13 @@
     class databaseManager {
         public function __construct() {
             Server::setConnect();
-            
         }
         #前端jquery檢查創建帳號合理性的窗口 
-        public function ajaxCheck($userAccount) {
-            $result=$this->checkAccount($userAccount);
+        public function ajaxCheck($Account) {
+            $result=$this->checkAccount($Account);
             switch($result) {
                 case "0": 
-                    echo"$userAccount僅可為數字及英文字母還有底線";
+                    echo"僅可為數字及英文字母還有底線";
                     break;
                 case "1": 
                     echo "帳號長度至少要八個字元";
@@ -26,8 +25,8 @@
         }
         
         #前端jquery檢查使用者帳密是否正確 
-        public function ajaxPwd($userName, $userPwd) {
-            $result=$this->loginAccount($userName, $userPwd);
+        public function ajaxPwd($Account, $userPwd) {
+            $result=$this->loginAccount($Account, $userPwd);
             switch($result) {
                 case "0": 
                     echo"無此帳號唷";
@@ -39,8 +38,8 @@
                     echo "密碼錯誤";
                     break;
                 case "3":
-                    $_SESSION['userName']=$userName;
-                    $result=["歡迎你的回來~! {$userName}",
+                    $_SESSION['userName']=$Account;
+                    $result=["歡迎你的回來~! {$Account}",
                     "true"];
                     echo json_encode($result);
                     break;
@@ -48,17 +47,17 @@
             }
         }
         
-        #checkAccount($userAccount)用於檢查帳號格式正確性與是否重複 
-        public function checkAccount($userAccount) {
-            if(!preg_match("/^[A-Za-z_][A-Za-z0-9_]{8,15}$/", $userAccount)) {
-                return 0; //echo "$userAccount僅可為數字及英文字母還有底線"; 
+        #checkAccount($Account)用於檢查帳號格式正確性與是否重複 
+        public function checkAccount($Account) {
+            if(strlen($Account) <8) {
+                return 1; //echo "$Account僅可為數字及英文字母還有底線"; 
             }
-            else if(strlen($userAccount) <8) {
-                return 1;
+            else if(!preg_match("/^[A-Za-z_][A-Za-z0-9_]{7,15}$/", $Account)) {
+                return 0;
                 /* "帳號長度至少要八個字元" */
             }
             else {
-                $sel='SELECT `pAccount` FROM `account` where `pAccount`=' . "'$userAccount'";
+                $sel='SELECT `pAccount` FROM `account` where `pAccount`=' . "'$Account'";
                 $result=mysqli_query(Server:: $worldO, $sel);
                 if($row=mysqli_fetch_assoc($result)) {
                     return 2;
@@ -91,11 +90,11 @@
             }
         }
         
-        #loginAccount($userName, $userPwd)用於檢查登入
-        public function loginAccount($userName, $userPwd) {
-            $sel='SELECT `pPassword` FROM `account` where `pAccount`=' . "'$userName'";
+        #loginAccount($Account, $userPwd)用於檢查登入
+        public function loginAccount($Account, $userPwd) {
+            $sel='SELECT `pPassword` FROM `account` where `pAccount`=' . "'$Account'";
             $result=mysqli_query(Server::$worldO, $sel);
-            if(!$userName | !$userPwd) {
+            if(!$Account | !$userPwd) {
                 return 1;//echo "帳號密碼不可為空白";
             }
             else if($row=mysqli_fetch_row($result)) {

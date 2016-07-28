@@ -3,9 +3,8 @@
     class Server {
         public static $worldO;
         public static function setConnect() {
-            $worldO=mysqli_connect("localhost", "guest", "guest", "worldO");
-            mysqli_set_charset($worldO, "utf8");
-            Server::$worldO=$worldO;
+            Server::$worldO=mysqli_connect("localhost", "guest", "guest", "worldO");
+            mysqli_set_charset(Server::$worldO, "utf8");
         }
     }
     ?>

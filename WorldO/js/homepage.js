@@ -79,19 +79,9 @@ $(document).ready(function() {
         {   
             $(".form-signin").submit();
         }
-        // $.ajax({
-        //     async: true,
-        //     type: "post",
-        //     url: 'guest/callMethod/' ,
-        //     data: {userName:$("#inputAccount").val(),userPwd:$("#inputPassword").val(),flag : "login"},
-        //     success: function (response) {
-        //         var obj = JSON.parse(response);
-        //         if(obj[1])
-        //         {
-        //                 alert(obj[0]);
-        //         }
-        //     }
-        // });
+         else{
+             alert("帳號格式有誤");
+         }
     });
 
     //----------------------------------------

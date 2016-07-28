@@ -27,7 +27,7 @@
             }
             else{
             echo "<script>alert('false');</script>";
-            echo $check ->loginAccount($_POST["inputAccount"],$_POST["inputPassword"]);
+            header("refresh:1;/WorldO/");
 
             }
             $check->close();

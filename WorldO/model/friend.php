@@ -8,12 +8,12 @@
         
         
         #======================================================================#
-        #getFriendList($loginAccount) 回傳帳戶的好友名單                       #
+        #getFriendList($myAccount) 回傳帳戶的好友名單                       #
         #======================================================================#
         
-        function getFriendList($loginAccount){
+        function getFriendList($myAccount){
             $sql = "SELECT `friendAccount` FROM `userFriend`
-            where `userAccount` = '{$loginAccount}' and isfriend = true ";
+            where `userAccount` = '{$myAccount}' and isfriend = true ";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
             while($row = mysqli_fetch_row($result)){
@@ -25,11 +25,11 @@
         }
          
         #======================================================================#
-        #getFriendInvite($userAccount)獲取帳戶好友邀請資訊                     #
+        #getFriendInvite($myAccount)獲取帳戶好友邀請資訊                     #
         #======================================================================#
         
-        function getFriendInvite($userAccount){
-            $sql="select `friendAccount` from `userFriend` where `userAccount` =  '$userAccount' and `isfriend` = 0";
+        function getFriendInvite($myAccount){
+            $sql="select `friendAccount` from `userFriend` where `userAccount` =  '$myAccount' and `isfriend` = 0";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
             while($row = mysqli_fetch_row($result)){
