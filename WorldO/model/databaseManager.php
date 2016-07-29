@@ -4,6 +4,9 @@
         public function __construct() {
             Server::setConnect();
         }
+        public function checkMember(){
+            return isset($_SESSION['username']);
+        }
         #前端jquery檢查創建帳號合理性的窗口 
         public function ajaxCheck($Account) {
             $result=$this->checkAccount($Account);
@@ -91,7 +94,7 @@
         }
         
         #loginAccount($Account, $userPwd)用於檢查登入
-        public function loginAccount($Account, $userPwd) {
+        public function loginAccount($Account,$userPwd) {
             $sel='SELECT `pPassword` FROM `account` where `pAccount`=' . "'$Account'";
             $result=mysqli_query(Server::$worldO, $sel);
             if(!$Account | !$userPwd) {
@@ -99,7 +102,7 @@
             }
             else if($row=mysqli_fetch_row($result)) {
                 if( $row[0]==$userPwd) {
-                    
+                    $_SESSION['username']=$Account;
                     return 3;
                 }
                 else {

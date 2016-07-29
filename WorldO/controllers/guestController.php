@@ -6,10 +6,8 @@
         #======================================================================#
         
         public function index(){
-            if(isset($_SESSION['username']))
-            {$this->view("personalPage");}
-            else
-            {$this->view("index");}
+            $check = $this->model("databaseManager");
+            $check ->checkMember()?$this->view("personalPage"):$this->view("index");
         }
         
         #======================================================================#
@@ -18,12 +16,8 @@
         
         public function loginAccount(){
             $check = $this->model("databaseManager");
-        
-            $_SESSION['username']=($check ->loginAccount($_POST["inputAccount"],$_POST["inputPassword"]) == 3)?
-            $_POST["inputAccount"]:NULL;
-            
+            $check ->loginAccount($_POST["inputAccount"],$_POST["inputPassword"]);
             header("location:/WorldO/");
-            
         }
         
         #======================================================================#

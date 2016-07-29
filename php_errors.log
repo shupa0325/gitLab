@@ -910,3 +910,27 @@
 [21-Jul-2016 06:21:48 UTC] PHP   4. guestController->callMethod() /home/ubuntu/workspace/work/WorldO/core/App.php:33
 [21-Jul-2016 06:21:48 UTC] PHP   5. databaseManager->ajaxCheck() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:47
 [21-Jul-2016 06:21:48 UTC] PHP   6. databaseManager->loginAccount() /home/ubuntu/workspace/work/WorldO/model/databaseManager.php:24
+[29-Jul-2016 02:52:38 UTC] PHP Warning:  include_once(article/loadArticle): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/WorldO/views/personalPage.php on line 75
+[29-Jul-2016 02:52:38 UTC] PHP Stack trace:
+[29-Jul-2016 02:52:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[29-Jul-2016 02:52:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:11
+[29-Jul-2016 02:52:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/work/WorldO/core/App.php:34}() /home/ubuntu/workspace/work/WorldO/core/App.php:34
+[29-Jul-2016 02:52:38 UTC] PHP   4. guestController->index() /home/ubuntu/workspace/work/WorldO/core/App.php:34
+[29-Jul-2016 02:52:38 UTC] PHP   5. Controller->view() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:10
+[29-Jul-2016 02:52:38 UTC] PHP   6. require_once() /home/ubuntu/workspace/work/WorldO/core/Controller.php:22
+[29-Jul-2016 02:52:38 UTC] PHP Warning:  include_once(): Failed opening 'article/loadArticle' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/WorldO/views/personalPage.php on line 75
+[29-Jul-2016 02:52:38 UTC] PHP Stack trace:
+[29-Jul-2016 02:52:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[29-Jul-2016 02:52:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:11
+[29-Jul-2016 02:52:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/work/WorldO/core/App.php:34}() /home/ubuntu/workspace/work/WorldO/core/App.php:34
+[29-Jul-2016 02:52:38 UTC] PHP   4. guestController->index() /home/ubuntu/workspace/work/WorldO/core/App.php:34
+[29-Jul-2016 02:52:38 UTC] PHP   5. Controller->view() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:10
+[29-Jul-2016 02:52:38 UTC] PHP   6. require_once() /home/ubuntu/workspace/work/WorldO/core/Controller.php:22
+[29-Jul-2016 02:52:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/work/WorldO/views/personalPage.php on line 76
+[29-Jul-2016 02:52:38 UTC] PHP Stack trace:
+[29-Jul-2016 02:52:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/WorldO/index.php:0
+[29-Jul-2016 02:52:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/WorldO/index.php:11
+[29-Jul-2016 02:52:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/work/WorldO/core/App.php:34}() /home/ubuntu/workspace/work/WorldO/core/App.php:34
+[29-Jul-2016 02:52:38 UTC] PHP   4. guestController->index() /home/ubuntu/workspace/work/WorldO/core/App.php:34
+[29-Jul-2016 02:52:38 UTC] PHP   5. Controller->view() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:10
+[29-Jul-2016 02:52:38 UTC] PHP   6. require_once() /home/ubuntu/workspace/work/WorldO/core/Controller.php:22

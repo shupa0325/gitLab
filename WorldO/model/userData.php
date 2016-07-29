@@ -26,8 +26,8 @@
             $sql = "UPDATE  `worldO`.`account` SET  `pPassword` =  '{$userData['newPassword']}',
 `englishName` =  '{$userData['englishName']}',
 `phoneNumber` =  '{$userData['phoneNumber']}',
-`address` =  '{$userData['address']}' WHERE  `account`.`pAccount` =  'shupa0325' AND  `account`.`email` =  'fir325ss@yahoo.com.tw';";
-            return (mysqli_query(Server:: $worldO, $sql))?"location:/WorldO/":"location:/WorldO/data/editData";
+`address` =  '{$userData['address']}' WHERE  `account`.`pAccount` =  '{$_SESSION['username']}' AND  `account`.`email` =  '{$_SESSION['email']}';";
+            return mysqli_query(Server:: $worldO, $sql);
         }
         
         #======================================================================#
