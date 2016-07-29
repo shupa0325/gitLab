@@ -15,7 +15,7 @@
         #======================================================================#
         
         public function editData(){
-            $this->model("userData",$_SESSION["username"]);
+            $this->model("userData");
             $this->view('personData');
         }
         
@@ -24,12 +24,8 @@
         #======================================================================#
         
         public function updateData(){
-            $update = $this->model("userData",$_SESSION["username"]);
-            if($update -> changeData($_POST)){
-                header("location:/WorldO/");
-            }else{
-                header("location:/WorldO/data/editData");
-            }
+            $update = $this->model("userData");
+            header($update -> changeData($_POST));
         }
         
         #======================================================================#
@@ -37,16 +33,16 @@
         #======================================================================#
         
         public function isMessage(){
-            $getStatus = $this->model("userData",$_SESSION["username"]);
-            $this ->view("ajaxReturn",$getStatus -> isMessage($_SESSION["username"]));
+            $getStatus = $this->model("userData");
+            $this ->view("ajaxReturn",$getStatus -> isMessage());
         }
         #======================================================================#
         #getMessage() 獲取訊息內容，並且回傳陣列                               #
         #======================================================================#
         
         public function getMessage(){
-            $getMessage = $this->model("userData",$_SESSION["username"]);
-            $this ->view("ajaxReturn",$getMessage -> getMessage($_SESSION["username"],$_POST["friend"]));
+            $getMessage = $this->model("userData");
+            $this ->view("ajaxReturn",$getMessage -> getMessage($_POST["friend"]));
         }
         
         #======================================================================#
@@ -54,8 +50,8 @@
         #======================================================================#
         
         public function sendMessage(){
-            $sentMessage = $this->model("userData",$_SESSION["username"]);
-            $sentMessage -> sendMessage($_SESSION["username"],$_POST["friend"],$_POST['message']); 
+            $sentMessage = $this->model("userData");
+            $sentMessage -> sendMessage($_POST["friend"],$_POST['message']); 
             header("location:/WorldO/");
         }
         #======================================================================#
@@ -63,8 +59,8 @@
         #======================================================================#
         
         public function setRead(){
-            $sentMessage = $this->model("userData",$_SESSION["username"]);
-            $sentMessage -> setRead($_POST["friend"],$_SESSION["username"],"T"); 
+            $sentMessage = $this->model("userData");
+            $sentMessage -> setRead($_POST["friend"],"T"); 
         }
         
     }

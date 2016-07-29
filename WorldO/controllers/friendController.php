@@ -6,7 +6,7 @@
         #======================================================================#
         public function displayFriend(){
             $friendTable = $this->model("friend");
-            $this ->view("ajaxReturn",$friendTable ->getFriendList($_SESSION['username']));
+            $this ->view("ajaxReturn",$friendTable ->getFriendList());
         }
         
         #======================================================================#
@@ -15,7 +15,7 @@
         
         public function invitedfriend(){
             $friend = $this->model("friend");
-            $this ->view("ajaxReturn",$friend ->getFriendInvite($_SESSION['username'])); 
+            $this ->view("ajaxReturn",$friend ->getFriendInvite()); 
         }
         
         #======================================================================#
@@ -24,7 +24,7 @@
         
         public function addfriend(){
             $friend = $this->model("friend");
-            $friend = $friend->addFriend($_SESSION['username'],$_POST['friend']);
+            $friend = $friend->addFriend($_POST['friend']);
         }
         
         #======================================================================#
@@ -32,7 +32,7 @@
         #======================================================================#
         public function acceptfriend(){
             $friend = $this->model("friend");
-            $this ->view("ajaxReturn",$friend -> acceptInvite($_SESSION['username'],$_POST['friend']));
+            $this ->view("ajaxReturn",$friend -> acceptInvite($_POST['friend']));
         }
         
         #======================================================================#
@@ -40,8 +40,7 @@
         #======================================================================#
         public function refusefriend(){
             $friend = $this->model("friend");
-            $friend -> deleteFriend($_SESSION['username'],$_POST['friend']);
-        
+            $friend -> deleteFriend($_POST['friend']);
         }
     }
 

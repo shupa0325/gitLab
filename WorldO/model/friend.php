@@ -8,12 +8,12 @@
         
         
         #======================================================================#
-        #getFriendList($myAccount) 回傳帳戶的好友名單                       #
+        #getFriendList() 回傳帳戶的好友名單                       #
         #======================================================================#
         
-        function getFriendList($myAccount){
+        function getFriendList(){
             $sql = "SELECT `friendAccount` FROM `userFriend`
-            where `userAccount` = '{$myAccount}' and isfriend = true ";
+            where `userAccount` = '{$_SESSION['username']}' and isfriend = true ";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
             while($row = mysqli_fetch_row($result)){
@@ -25,11 +25,11 @@
         }
          
         #======================================================================#
-        #getFriendInvite($myAccount)獲取帳戶好友邀請資訊                     #
+        #getFriendInvite()獲取帳戶好友邀請資訊                     #
         #======================================================================#
         
-        function getFriendInvite($myAccount){
-            $sql="select `friendAccount` from `userFriend` where `userAccount` =  '$myAccount' and `isfriend` = 0";
+        function getFriendInvite(){
+            $sql="select `friendAccount` from `userFriend` where `userAccount` =  '{$_SESSION['username']}' and `isfriend` = 0";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
             while($row = mysqli_fetch_row($result)){
@@ -43,16 +43,16 @@
         
         
         #======================================================================#
-        #addFriend($myAccount,$friendAccount) 新增好友                         #
+        #addFriend({$_SESSION['username']}$friendAccount) 新增好友                         #
         #======================================================================#
         
-        public function addFriend($myAccount,$friendAccount){
+        public function addFriend($friendAccount){
             $sql="select `pAccount` from `account` where `pAccount` =  '$friendAccount'";
             $result = mysqli_query(Server::$worldO,$sql);
             
             if(mysqli_fetch_row($result)){
                     
-                $sql = "INSERT INTO `worldO`.`userFriend` (`userAccount`, `friendAccount`, `talkRecord`, `isfriend`) VALUES ('$myAccount', '$friendAccount', NULL,1), ('$friendAccount', '$myAccount', NULL,0);";
+                $sql = "INSERT INTO `worldO`.`userFriend` (`userAccount`, `friendAccount`, `talkRecord`, `isfriend`) VALUES ('{$_SESSION['username']}', '$friendAccount', NULL,1), ('$friendAccount', '{$_SESSION['username']}', NULL,0);";
                 if(mysqli_query(Server::$worldO,$sql)){
                     echo "success";
                 }else{
@@ -64,11 +64,11 @@
         }
         
         #======================================================================#
-        #acceptInvite($myAccount,$friendAccount) 接受好友邀請                  #
+        #acceptInvite($friendAccount) 接受好友邀請                  #
         #======================================================================#
             
-        function acceptInvite($myAccount,$friendAccount){
-             $sql="UPDATE  `worldO`.`userFriend` SET  `isfriend` =  '1' WHERE  `userFriend`.`userAccount` =  '$myAccount' AND  `userFriend`.`friendAccount` =  '$friendAccount';";
+        function acceptInvite($friendAccount){
+             $sql="UPDATE  `worldO`.`userFriend` SET  `isfriend` =  '1' WHERE  `userFriend`.`userAccount` =  '{$_SESSION['username']}' AND  `userFriend`.`friendAccount` =  '$friendAccount';";
              if(mysqli_query(Server::$worldO,$sql))
                 return "success";
                 return "failure";
@@ -78,13 +78,13 @@
         
         
         #======================================================================#
-        #deleteFriend($myAccount,$friendAccount)刪除好友                       #
+        #deleteFriend($friendAccount)刪除好友                       #
         #======================================================================#
         
-        function deleteFriend($myAccount,$friendAccount){
-                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$myAccount' AND `userFriend`.`friendAccount` = '$friendAccount'";
+        function deleteFriend($friendAccount){
+                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '{$_SESSION['username']}' AND `userFriend`.`friendAccount` = '$friendAccount'";
                 mysqli_query(Server::$worldO,$sel);
-                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$friendAccount' AND `userFriend`.`friendAccount` = '$myAccount'";
+                $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$friendAccount' AND `userFriend`.`friendAccount` = '{$_SESSION['username']}'";
                 mysqli_query(Server::$worldO,$sel);
                 if(mysqli_query(Server::$worldO,$sel)){
                     echo "success";
