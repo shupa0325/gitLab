@@ -77,7 +77,7 @@
         }
         #遞迴運算
         private function remath($i,$j){
-                if(($i+1 <= 9) && $this -> temp[$i+1][$j]){
+                if(($i+1 < count($this->temp)) && $this -> temp[$i+1][$j]){
                     $stack++;
                     $this -> temp[$i+1][$j] = 0 ;
                     $stack += $this-> remath($i+1,$j);
@@ -87,7 +87,7 @@
                     $this -> temp[$i-1][$j] = 0 ;
                     $stack += $this-> remath($i-1,$j);
                 }
-                if(($j+1 <= 9) && $this -> temp[$i][$j+1]){
+                if(($j+1 < count($this->temp[$i])) && $this -> temp[$i][$j+1]){
                     $stack++;
                     $this -> temp[$i][$j+1] = 0 ;
                     $stack += $this-> remath($i,$j+1);
