@@ -24,8 +24,11 @@ class ActivityManager{
         $result -> bindParam(':companion',$data['companion']);
         $result -> bindParam(':beginTime',$data['beginTime']);
         $result -> bindParam(':endTime',$data['endTime']);
-       // $this -> setID($data['activityName'],$data['beginTime']);
-        return $result ->execute();
+        if($result ->execute()){
+            $this -> setID($data['activityName'],$data['beginTime']);
+            return true;
+        }
+        return false;
     }
     function deleteActivity($data){
             
@@ -35,7 +38,12 @@ class ActivityManager{
         
         
     }
-    function getActivity(){
+    function getActivity($ID){
+        $sql = "SELECT * FROM  `ActivityTotal` WHERE 
+                `ID` = :ID";
+        $result -> bindParam(':ID',$ID);        
+    }
+    function getAllActivity(){
         $pdo =$this->server->getConnection();
         $sql = "SELECT * FROM `ActivityTotal`";
         $result = $pdo->prepare($sql);
@@ -44,26 +52,24 @@ class ActivityManager{
         $row =$result->fetchAll();
         return $row;
     }
-    // function setID($name,$begintime){
-    //     $pdo =$this->server->getConnection();
-    //     $sql = "SELECT  `isOperating` FROM  `ActivityTotal` WHERE 
-    //             Aname =  ':name' AND 
-    //             beginTime =  ':beginTime'
-    //             LIMIT 0 , 1";
-    //     $result = $pdo->prepare($sql);
-    //     $result -> bindParam(':name',$name);
-    //     $result -> bindParam(':beginTime',$begintime);
-    //     if ($result->execute()){
-    //         $row = $result->fetch();
-    //         print_r($row);
-    //     	if(!empty($row))
-    //     	{
-    //     	    $this->id = $row[0];
-    //     	}
-    //     }
-    // }
-    // function getURL(){
-    //     return "{$this->id}";
-    // }
+    function setID($name,$begintime){
+        $pdo =$this->server->getConnection();
+        $sql = "SELECT  `ID` FROM  `ActivityTotal` WHERE 
+                `Aname` =  :name AND 
+                `beginTime` = :beginTime";
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':name',$name);
+        $result -> bindParam(':beginTime',$begintime);
+        if($result->execute()){
+            $row = $result->fetch();
+        	if($row)
+        	{
+        	    $this->id = $row[0];
+        	}
+        }
+    }
+    function getURL(){
+        return "{$this->id}";
+    }
 }
 ?>

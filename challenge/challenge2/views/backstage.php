@@ -10,7 +10,7 @@
     </head>
     <body>
         <?php require_once("basic.html");?>
-        <form class="form-create" form method="post" action = "backstage/createAct">
+        <form class="form-create" form method="post" action = "/challenge2/backstage/createAct">
                 <table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#F2F2F2">
                 <tr>
                 <td colspan="2" align="center" bgcolor="#CCCCCC">
@@ -50,7 +50,7 @@
             <tr>
                 <td  width="80" align="center" valign="baseline">URL為:</td>
                 <td valign="baseline">
-                    <input type="text" name="URL" id="URL" value="<?php echo $data;?>" required/>
+                    <input type="text" name="URL" id="URL" value="<?php echo "https://day1-shupa-tsai.c9users.io/challenge2/reception/checkActivity/$data";?>" required/>
             </tr>
             <?php }else{    ?>
             <tr>

@@ -7,10 +7,11 @@ class receptionController extends Controller{
     
     public function index(){
         $getAct = $this -> model("ActivityManager");
-        $data = $getAct ->getActivity();
+        $data = $getAct ->getAllActivity();
         $this -> view("reception",$data);
     }
-    public function getActivity(){
+    public function checkActivity($url){
+       $Act = $this -> model("ActivityManager");
        
     }
     

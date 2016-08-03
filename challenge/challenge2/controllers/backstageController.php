@@ -16,7 +16,7 @@ class backstageController extends Controller{
     public function createAct(){
         $act = $this->model("ActivityManager");
         if($act -> createActivity($_POST))
-        echo "成功".$act->id;// $this->view("backstage",$act->id);
+        $this->view("backstage",$act->id);
     }
 }
 ?>

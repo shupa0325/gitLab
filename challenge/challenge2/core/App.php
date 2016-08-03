@@ -15,8 +15,7 @@ class App {
         
         //如果檔案不存在，就不管她
         if (!file_exists("controllers/$controllerName.php"))
-            header("location:/WorldO/");
-        
+            return;        
         require_once "controllers/$controllerName.php";
         $controller = new $controllerName;
         
