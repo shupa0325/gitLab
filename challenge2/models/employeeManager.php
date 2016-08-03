@@ -1,7 +1,0 @@
-<?php
-    class employeeManager{
-        createEmployee(){
-            
-        }
-    }
-?>

@@ -934,3 +934,107 @@
 [29-Jul-2016 02:52:38 UTC] PHP   4. guestController->index() /home/ubuntu/workspace/work/WorldO/core/App.php:34
 [29-Jul-2016 02:52:38 UTC] PHP   5. Controller->view() /home/ubuntu/workspace/work/WorldO/controllers/guestController.php:10
 [29-Jul-2016 02:52:38 UTC] PHP   6. require_once() /home/ubuntu/workspace/work/WorldO/core/Controller.php:22
+[02-Aug-2016 08:24:51 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:51 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:51 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:51 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:51 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:51 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:51 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:51 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:57 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:57 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:57 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:57 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:57 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:57 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:57 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:57 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:24:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:24:57 UTC] PHP Stack trace:
+[02-Aug-2016 08:24:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:24:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:25:02 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:25:02 UTC] PHP Stack trace:
+[02-Aug-2016 08:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:25:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:25:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:25:02 UTC] PHP Stack trace:
+[02-Aug-2016 08:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:25:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:25:02 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:25:02 UTC] PHP Stack trace:
+[02-Aug-2016 08:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:25:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:25:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:25:02 UTC] PHP Stack trace:
+[02-Aug-2016 08:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:25:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:25:02 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:25:02 UTC] PHP Stack trace:
+[02-Aug-2016 08:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:25:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:25:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:25:02 UTC] PHP Stack trace:
+[02-Aug-2016 08:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:25:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:40 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:40 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:40 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:40 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:40 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:40 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:40 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:40 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:46 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:46 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:46 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:46 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:46 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:46 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:46 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:46 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:48 UTC] PHP Warning:  require_once(controllers/jsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:48 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
+[02-Aug-2016 08:41:48 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/jsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/work/challenge2/core/App.php on line 20
+[02-Aug-2016 08:41:48 UTC] PHP Stack trace:
+[02-Aug-2016 08:41:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/work/challenge2/index.php:0
+[02-Aug-2016 08:41:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/work/challenge2/index.php:12
