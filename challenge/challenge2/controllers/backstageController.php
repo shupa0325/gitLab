@@ -6,6 +6,8 @@ class backstageController extends Controller{
     #======================================================================#
     
     public function index(){
+        $emp = $this->model("employeeManager");
+        print_r($emp -> loadEmployee());
         $this->view("backstage");
     }
     
@@ -24,7 +26,9 @@ class backstageController extends Controller{
         $this->view("backstage");
     }
     public function loadEmployee(){
-        
+        $emp = $this->model("employeeManager");
+        $emp -> loadEmployee();
+        $this->view("backstage");
     }
 }
 ?>

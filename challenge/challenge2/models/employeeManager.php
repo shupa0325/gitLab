@@ -30,5 +30,17 @@ class employeeManager{
         else
             echo 0;
     }
+    function loadEmployee(){
+        $pdo =$this->server->getConnection();
+        $sql = "select `EID`,`Name` FROM  `employee`";
+        $result = $pdo->prepare($sql);
+        $result->execute();
+        $result ->setFetchMode(PDO::FETCH_ASSOC);
+        $data;
+        while($row = $result->fetch()){
+            $data[] = $row['EID']." : ".$row['Name'];
+        }
+        return $data;
+    }
 }
 ?>
