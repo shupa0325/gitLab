@@ -33,9 +33,34 @@ class ActivityManager{
             
         
     }
-    function updateActivity($ID,$withPerson){
+    function updateActivity($ID,$EID,$totalJoin,$nowJoin){
         
+        #更新活動員工參加人數
+        $pdo =$this->server->getConnection();
+        $sql = "UPDATE  `ActivitySystem`.`ActivityDetail` SET  `isJoin` =  '1',
+                `totalJoin` = :totalJoin WHERE `ActivityDetail`.`ID` =:ID; AND `EID` = :EID";
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':totalJoin',$totalJoin);
+        $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
+        $result -> bindParam(':EID',$EID);
+        $result->execute();
+        #更新活動目前總參加人數
+        $sql = "UPDATE  `ActivitySystem`.`ActivityTotal` SET  `joinPerson` =  :joinPerson,
+                WHERE  `ActivityTotal`.`ID` = :ID;";
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':joinPerson',$nowJoin);
+        $result->execute();
         
+    }
+    function setJoinTabel($ID,$EID){
+        #設定參加人數
+        $pdo =$this->server->getConnection();
+        $sql = "INSERT INTO `ActivitySystem`.`ActivityDetail` (`ActivityNO`, `EID`, `isJoin`, `totalJoin`, `ID`) 
+        VALUES (:ID, :EID, '0', '0', NULL);";
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
+        $result -> bindParam(':EID',$EID);
+        $result->execute();
     }
     function getActivity($ID){
         $pdo =$this->server->getConnection();
