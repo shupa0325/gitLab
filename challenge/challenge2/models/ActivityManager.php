@@ -34,14 +34,20 @@ class ActivityManager{
             
         
     }
-    function updateActivity($data){
+    function updateActivity($ID,$withPerson){
         
         
     }
     function getActivity($ID){
+        $pdo =$this->server->getConnection();
         $sql = "SELECT * FROM  `ActivityTotal` WHERE 
                 `ID` = :ID";
-        $result -> bindParam(':ID',$ID);        
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
+        $result->execute();
+        $result ->setFetchMode(PDO::FETCH_ASSOC);
+        $row = $result->fetch();
+        return $row;
     }
     function getAllActivity(){
         $pdo =$this->server->getConnection();
@@ -68,8 +74,41 @@ class ActivityManager{
         	}
         }
     }
+    function queue($ID,$withPerson){
+        $pdo =$this->server->getConnection();
+        #新增排程，使用者領取號碼牌
+        $sql = "INSERT INTO  `ActivitySystem`.`bakery`(
+                `aID`,
+                `eID`,
+                `numberplate`,
+                )VALUES (:aID,:eID,NULL);";
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':aID',$ID,PDO::PARAM_INT);
+        $result -> bindParam(':eID',"2016080301");
+        $result->execute();
+        #抓取號碼牌
+        $sql = "SELECT `numberplate` FROM `bakery` WHERE `numberplate` <
+                (SELECT `numberplate` FROM  `bakery` WHERE 
+                `aID` = :aID AND `eID` = :eID)";
+        $result = $pdo->prepare($sql);
+        $result->execute();
+        while($result->fetch());
+        #抓取活動是否可以報名
+        $sql = "SELECT `limitPerson`,`joinPerson` FROM  `ActivityTotal` WHERE 
+                `ID` = :ID";
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
+        $result->execute();
+        $ans=$result->fetch(PDO::FETCH_ASSOC);
+        if($ans['limitPerson']>$ans['joinPerson']){//報名
+            // if($withPerson<$ans['limitPerson']-$ans['joinPerson'])
+                
+        }else{
+            return "報名額滿";
+        }
+    }
     function getURL(){
-        return "{$this->id}";
+        return;
     }
 }
 ?>

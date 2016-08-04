@@ -10,10 +10,13 @@ class receptionController extends Controller{
         $data = $getAct ->getAllActivity();
         $this -> view("reception",$data);
     }
-    public function checkActivity($url){
-       $Act = $this -> model("ActivityManager");
-       
+    public function checkActivity($ID){
+        $Act = $this -> model("ActivityManager");
+        $this -> view("activity",$Act -> getActivity($ID));
     }
-    
+    public function joinActivity($ID){
+        $Act = $this -> model("ActivityManager");
+        $Act -> updateActivity($ID);
+    }
 }
 ?>

@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>後台 </title>
-        <?= $this->script('jquery') ?>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台 </title>
+    <?= $this->script('jquery') ?>
         <?= $this->script('bootstrap.min') ?>
-        <?= $this->css('bootstrap.min') ?>
-    </head>
-    <body>
-        <?php require_once("basic.html");?>
-        <form class="form-create" form method="post" action = "/challenge2/backstage/createAct">
-                <table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#F2F2F2">
-                <tr>
+            <?= $this->css('bootstrap.min') ?>
+                <style>
+                    table {
+                        margin: 0 auto;
+                    }
+                    
+                    td {
+                        width: 200px;
+                    }
+                    
+                    table input {
+                        width: 100%;
+                    }
+                </style>
+</head>
+
+<body>
+    <?php require_once("basic.html");?>
+    <form class="form-create" form method="post" action="/challenge2/backstage/createAct">
+        <table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#F2F2F2">
+            <tr>
                 <td colspan="2" align="center" bgcolor="#CCCCCC">
                     <font color="#FFFFFF">新建活動</font>
                 </td>
@@ -30,7 +45,7 @@
             <tr>
                 <td width="80" align="center" valign="baseline">可攜眷數</td>
                 <td valign="baseline">
-                    <input type="Number" name="companion" id="companion" min="1" max="10" value="0"required/>
+                    <input type="Number" name="companion" id="companion" min="1" max="10" value="0" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline">開始報名時間</td>
@@ -48,17 +63,29 @@
                 <td valign="baseline">
             </tr>
             <tr>
-                <td  width="80" align="center" valign="baseline">URL為:</td>
+                <td width="80" align="center" valign="baseline">URL為:</td>
                 <td valign="baseline">
-                    <input type="text" name="URL" id="URL" value="<?php echo "https://day1-shupa-tsai.c9users.io/challenge2/reception/checkActivity/$data";?>" required/>
+                    <input type="text" name="URL" id="URL" value="<?php echo " https://day1-shupa-tsai.c9users.io/challenge2/reception/checkActivity/$data ";?>" required/>
             </tr>
             <?php }else{    ?>
             <tr>
                 <td colspan="2" align="center" bgcolor="#CCCCCC">
-                    <input type="submit" value="create" name="createActivity" id="createActivity"/>
+                    <input type="submit" value="create" name="createActivity" id="createActivity" />
                 </td>
             </tr>
             <?php }    ?>
-            </form>
-    </body>
+
+        </table>
+    </form>
+    <div class ="createEmployee">
+    <form>
+        <table style ="background : #77DDFF">
+            <tr><td>新建員工編號<input type="text" name="EID" /></td></tr>
+            <tr><td>新建員工姓名<input type="text" name="name" /></td></tr>
+            <tr><td><input type="submit" value="Submit" /></td></tr>
+        </table>
+    </form>
+    </div>
+</body>
+
 </html>
