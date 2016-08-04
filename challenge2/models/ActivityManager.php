@@ -2,7 +2,6 @@
 class ActivityManager{
     var $id ;
     var $server;
-    var $pdo;
     function __construct(){
         $this->server = new Server();
     }

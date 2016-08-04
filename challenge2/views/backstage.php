@@ -17,7 +17,7 @@
                         width: 200px;
                     }
                     
-                    table input {
+                    table input[type=text] {
                         width: 100%;
                     }
                 </style>
@@ -25,7 +25,7 @@
 
 <body>
     <?php require_once("basic.html");?>
-    <form class="form-create" form method="post" action="/challenge2/backstage/createAct">
+    <form class="form-create" method="post" action="/challenge2/backstage/createAct">
         <table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#F2F2F2">
             <tr>
                 <td colspan="2" align="center" bgcolor="#CCCCCC">
@@ -55,8 +55,23 @@
             <tr>
                 <td width="80" align="center" valign="baseline">截止日期</td>
                 <td valign="baseline">
-                    <input type="datetime-local" name="endTime" id="endTime" value="" required/>
+                    <input type="datetime-local" name="endTime" id="endTime" value="" required/></td>
             </tr>
+            <tr>
+                可參加員工選擇:<br>
+                <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                    <input type="checkbox" value="">hello
+                
+            </tr>
+            
             <?php if($data){?>
             <tr>
                 <td colspan="2" width="80" align="center" valign="baseline" bgcolor="#CCCCCC">建立成功</td>
@@ -76,12 +91,13 @@
             <?php }    ?>
 
         </table>
+        
     </form>
     <div class ="createEmployee">
-    <form>
+    <form method="post" action="/challenge2/backstage/createEmployee">
         <table style ="background : #77DDFF">
-            <tr><td>新建員工編號<input type="text" name="EID" /></td></tr>
             <tr><td>新建員工姓名<input type="text" name="name" /></td></tr>
+            <tr><td>員工所屬部門<input type="text" name="department" /></td></tr>
             <tr><td><input type="submit" value="Submit" /></td></tr>
         </table>
     </form>

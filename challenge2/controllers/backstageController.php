@@ -18,5 +18,13 @@ class backstageController extends Controller{
         if($act -> createActivity($_POST))
         $this->view("backstage",$act->id);
     }
+    public function createEmployee(){
+        $emp = $this->model("employeeManager");
+        $emp -> createEmployee($_POST);
+        $this->view("backstage");
+    }
+    public function loadEmployee(){
+        
+    }
 }
 ?>
