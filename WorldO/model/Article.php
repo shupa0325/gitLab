@@ -6,7 +6,7 @@ class Article{
         }
         
         #======================================================================#
-        #newArticle({$_SESSION['username']},$article) 新增文章                                #
+        #newArticle({$_SESSION['username']},$article) 新增文章                 #
         #======================================================================#
         
         function newArticle($article){
@@ -16,7 +16,7 @@ class Article{
         }
         
         #======================================================================#
-        #loadArticle({$_SESSION['username']}) 讀取所有認識帳戶包含自己的文章                  #
+        #loadArticle({$_SESSION['username']}) 讀取所有認識帳戶包含自己的文章   #
         #======================================================================#
         
         function loadArticle(){
@@ -74,22 +74,6 @@ class Article{
         function deleteArticle($id){
             $sql = "DELETE FROM `worldO`.`article` WHERE `article`.`ID` = $id and `userName` = '{$_SESSION['username']}'";
             return mysqli_query(Server::$worldO,$sql);
-        }
-        
-        #======================================================================#
-        #updateMessage() 新增留言                                              #
-        #======================================================================#
-        
-        function updateMessage(){
-            
-        }
-        
-        #======================================================================#
-        #loadMessage() 讀取所有留言                                            #
-        #======================================================================#
-        
-        function loadMessage(){
-            
         }
         
 }

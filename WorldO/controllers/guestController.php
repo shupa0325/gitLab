@@ -40,7 +40,7 @@
         public function callMethod(){
             $check = $this->model("databaseManager");
            
-            $check ->ajaxCheck($_POST["userName"]);
+            $this ->model("ajaxReturn",$check->ajaxCheck($_POST["userName"]));
         
             $check->close();
         }
