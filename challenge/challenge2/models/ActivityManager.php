@@ -1,6 +1,7 @@
 <?php
 class ActivityManager{
     var $id ;
+    var $url;
     var $server;
     function __construct(){
         $this->server = new Server();
@@ -24,8 +25,10 @@ class ActivityManager{
         $result -> bindParam(':beginTime',$data['beginTime']);
         $result -> bindParam(':endTime',$data['endTime']);
         if($result ->execute()){
-            $this -> setID($data['activityName'],$data['beginTime']);
-            $this->setJoinTabel($this->id,$data['joinEmployee']);
+            $ID= $pdo->lastInsertId();
+            $this->id = $ID;
+            $this->setURL($ID);
+            $this->setJoinTabel($ID,$data['joinEmployee']);
             return true;
         }
         return false;
@@ -54,23 +57,27 @@ class ActivityManager{
         
     }
     function setJoinTabel($ID,$EID){
+        
         #設定參加人數
         $pdo =$this->server->getConnection();
         $sql = "INSERT INTO `ActivitySystem`.`ActivityDetail` (`ActivityNO`, `EID`, `isJoin`, `totalJoin`, `ID`) 
                 VALUES (:ID, :EID, '0', '0', NULL);";
+                
         $result = $pdo->prepare($sql);
         $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
         foreach($EID as $value){
             $result -> bindParam(':EID',$value);
             $result->execute();
+            
         }
     }
-    function getActivity($ID){
+    function getActivity($url){
         $pdo =$this->server->getConnection();
         $sql = "SELECT * FROM  `ActivityTotal` WHERE 
-                `ID` = :ID";
+                `url` = :url";
         $result = $pdo->prepare($sql);
-        $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
+        $result -> bindParam(':url',$url);
+        echo $url;
         $result->execute();
         $result ->setFetchMode(PDO::FETCH_ASSOC);
         $row = $result->fetch();
@@ -85,22 +92,7 @@ class ActivityManager{
         $row =$result->fetchAll();
         return $row;
     }
-    function setID($name,$begintime){
-        $pdo =$this->server->getConnection();
-        $sql = "SELECT  `ID` FROM  `ActivityTotal` WHERE 
-                `Aname` =  :name AND 
-                `beginTime` = :beginTime";
-        $result = $pdo->prepare($sql);
-        $result -> bindParam(':name',$name);
-        $result -> bindParam(':beginTime',$begintime);
-        if($result->execute()){
-            $row = $result->fetch();
-        	if($row)
-        	{
-        	    $this->id = $row[0];
-        	}
-        }
-    }
+    
     function queue($ID,$withPerson){
         $pdo =$this->server->getConnection();
         #新增排程，使用者領取號碼牌
@@ -134,8 +126,17 @@ class ActivityManager{
             return "報名額滿";
         }
     }
-    function getURL(){
-        return;
+    function setURL($ID){
+        $pdo =$this->server->getConnection();
+        $sql = "UPDATE  `ActivitySystem`.`ActivityTotal` SET  `url` =  :url 
+                WHERE  `ActivityTotal`.`ID` = :ID";
+        $url = md5($ID);
+        $result = $pdo->prepare($sql);
+        $result -> bindParam(':url',$url);
+        $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
+        if($result->execute())
+        $this->url =  $url;
+        return "404notfound";
     }
 }
 ?>

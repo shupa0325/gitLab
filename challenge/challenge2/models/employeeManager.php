@@ -29,9 +29,8 @@ class employeeManager{
         $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
         $result -> bindParam(':EID',$EID);
         if($result->execute())
-            echo $EID;
-        else
-            echo 0;
+            return $EID;
+            return;
     }
     #======================================================================#
     #createEmployee($user)    讀取全部員工資料                             #

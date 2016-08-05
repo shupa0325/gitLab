@@ -5,7 +5,7 @@ class backstageController extends Controller{
     #index() 首頁引導方法                                                  #
     #======================================================================#
     
-    public function index(){
+    public function index($index = "null"){
         $emp = $this->model("employeeManager");
         $this->view("backstage",$emp->loadEmployee());
     }
@@ -16,15 +16,13 @@ class backstageController extends Controller{
     
     public function createAct(){
         $act = $this->model("ActivityManager");
-        print_r($_POST);
-        if($act -> createActivity($_POST))
-        echo "   {$act->id}";
-        // $this->view("backstage",$act->id);
+        $act -> createActivity($_POST);
+        $this->view("createResult",$act->url);
     }
     public function createEmployee(){
         $emp = $this->model("employeeManager");
         $emp -> createEmployee($_POST);
-        $this->view("backstage");
+        header("location:https://day1-shupa-tsai.c9users.io/challenge2/backstage");
     }
     public function loadEmployee(){
         $emp = $this->model("employeeManager");

@@ -6,21 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>後台 </title>
     <?= $this->script('jquery') ?>
-        <?= $this->script('bootstrap.min') ?>
-            <?= $this->css('bootstrap.min') ?>
-                <style>
-                    table {
-                        margin: 0 auto;
-                    }
-                    
-                    td {
-                        width: 200px;
-                    }
-                    
-                    table input[type=text] {
-                        width: 100%;
-                    }
-                </style>
+    <?= $this->script('bootstrap.min') ?>
+    <?= $this->css('bootstrap.min') ?>
+    <style>
+        table {
+            margin: 0 auto;
+        }
+        
+        td {
+            width: 200px;
+        }
+        
+        table input[type=text] {
+            width: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#beginTime').val(getDateTime(new Date()));
+            $('#endTime').val(getDateTime(new Date()));
+            $('#beginTime').prop("min", getDateTime(new Date()));
+            $('#endTime').prop("min",getDateTime(new Date()));
+            $('#endTime').change(function(){
+                $('#beginTime').prop("max",$(this).val());
+            });
+            $('#beginTime').change(function(){
+                $('#endTime').prop("min",$(this).val());
+            });
+            
+        });
+        function getDateTime(date){
+            var year = date.getFullYear();
+            var month = (date.getMonth() +1)<10? '0'+(date.getMonth() +1):(date.getMonth() +1);
+            var day = (date.getDay() +1)<10? '0'+(date.getDay()):(date.getDay());
+            var hour = (date.getHours() +1)<10? '0'+(date.getHours()):(date.getHours());
+            var min = (date.getMinutes() +1)<10? '0'+(date.getMinutes()):(date.getMinutes());
+            
+            return year +"-"+ month +"-"+ day +"T"+ hour +":"+ min;
+        }
+    </script>
 </head>
 
 <body>
@@ -45,12 +69,12 @@
             <tr>
                 <td width="80" align="center" valign="baseline">可攜眷數</td>
                 <td valign="baseline">
-                    <input type="Number" name="companion" id="companion" min="1" max="10" value="0" required/>
+                    <input type="Number" name="companion" id="companion" min="0" max="10" value="0" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline">開始報名時間</td>
                 <td valign="baseline">
-                    <input type="datetime-local" name="beginTime" id="beginTime" value="<?php?>" required/>
+                    <input type="datetime-local" name="beginTime" id="beginTime" value="" required/>
             </tr>
             <tr>
                 <td width="80" align="center" valign="baseline">截止日期</td>
@@ -82,10 +106,10 @@
         <form method="post" action="/challenge2/backstage/createEmployee">
             <table style="background : #77DDFF">
                 <tr>
-                    <td>新建員工姓名<input type="text" name="name" /></td>
+                    <td>新建員工姓名<input type="text" name="name"  required/></td>
                 </tr>
                 <tr>
-                    <td>員工所屬部門<input type="text" name="department" /></td>
+                    <td>員工所屬部門<input type="text" name="department"  required/></td>
                 </tr>
                 <tr>
                     <td align="center"><input type="submit" value="新增" /></td>
