@@ -4,6 +4,9 @@ class employeeManager{
     function __construct(){
         $this->server = new Server();
     }
+    #======================================================================#
+    #createEmployee($user)    創建員工資料                                 #
+    #======================================================================#
     function createEmployee($user){
         $pdo =$this->server->getConnection();
         $sql = "INSERT INTO `ActivitySystem`.`employee` (`EID`, `ID`, `Name`, `department`, `password`, `isStart`, `manager`) 
@@ -30,6 +33,9 @@ class employeeManager{
         else
             echo 0;
     }
+    #======================================================================#
+    #createEmployee($user)    讀取全部員工資料                             #
+    #======================================================================#
     function loadEmployee(){
         $pdo =$this->server->getConnection();
         $sql = "select `EID`,`Name` FROM  `employee`";
@@ -37,10 +43,8 @@ class employeeManager{
         $result->execute();
         $result ->setFetchMode(PDO::FETCH_ASSOC);
         $data;
-        while($row = $result->fetch()){
-            $data[] = $row['EID']." : ".$row['Name'];
-        }
-        return $data;
+        $row = $result->fetchAll();
+        return $row;
     }
 }
 ?>

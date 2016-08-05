@@ -7,8 +7,7 @@ class backstageController extends Controller{
     
     public function index(){
         $emp = $this->model("employeeManager");
-        print_r($emp -> loadEmployee());
-        $this->view("backstage");
+        $this->view("backstage",$emp->loadEmployee());
     }
     
     #======================================================================#
@@ -17,8 +16,10 @@ class backstageController extends Controller{
     
     public function createAct(){
         $act = $this->model("ActivityManager");
+        print_r($_POST);
         if($act -> createActivity($_POST))
-        $this->view("backstage",$act->id);
+        echo "   {$act->id}";
+        // $this->view("backstage",$act->id);
     }
     public function createEmployee(){
         $emp = $this->model("employeeManager");

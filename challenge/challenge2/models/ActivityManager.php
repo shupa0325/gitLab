@@ -25,6 +25,7 @@ class ActivityManager{
         $result -> bindParam(':endTime',$data['endTime']);
         if($result ->execute()){
             $this -> setID($data['activityName'],$data['beginTime']);
+            $this->setJoinTabel($this->id,$data['joinEmployee']);
             return true;
         }
         return false;
@@ -56,11 +57,13 @@ class ActivityManager{
         #設定參加人數
         $pdo =$this->server->getConnection();
         $sql = "INSERT INTO `ActivitySystem`.`ActivityDetail` (`ActivityNO`, `EID`, `isJoin`, `totalJoin`, `ID`) 
-        VALUES (:ID, :EID, '0', '0', NULL);";
+                VALUES (:ID, :EID, '0', '0', NULL);";
         $result = $pdo->prepare($sql);
         $result -> bindParam(':ID',$ID,PDO::PARAM_INT);
-        $result -> bindParam(':EID',$EID);
-        $result->execute();
+        foreach($EID as $value){
+            $result -> bindParam(':EID',$value);
+            $result->execute();
+        }
     }
     function getActivity($ID){
         $pdo =$this->server->getConnection();

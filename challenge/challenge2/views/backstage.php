@@ -58,49 +58,40 @@
                     <input type="datetime-local" name="endTime" id="endTime" value="" required/></td>
             </tr>
             <tr>
-                可參加員工選擇:<br>
-                <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
-                    <input type="checkbox" value="">hello
+                <td>可參加員工選擇:</td>
+                <td>
+                <?php foreach($data as $value){?>
                 
-            </tr>
-            
-            <?php if($data){?>
-            <tr>
-                <td colspan="2" width="80" align="center" valign="baseline" bgcolor="#CCCCCC">建立成功</td>
-                <td valign="baseline">
-            </tr>
-            <tr>
-                <td width="80" align="center" valign="baseline">URL為:</td>
-                <td valign="baseline">
-                    <input type="text" name="URL" id="URL" value="<?php echo " https://day1-shupa-tsai.c9users.io/challenge2/reception/checkActivity/$data ";?>" required/>
-            </tr>
-            <?php }else{    ?>
-            <tr>
-                <td colspan="2" align="center" bgcolor="#CCCCCC">
-                    <input type="submit" value="create" name="createActivity" id="createActivity" />
+                    <?php echo "<input type='checkbox' name = 'joinEmployee[]' value='{$value['EID']}'>{$value['EID']} : {$value['Name']}<br>";?>
+                
+                <?php }?>
                 </td>
             </tr>
-            <?php }    ?>
+
+
+            <tr>
+                <td colspan="2" align="center" bgcolor="#CCCCCC">
+                    <input type="submit" value="創建" name="createActivity" id="createActivity" />
+                </td>
+            </tr>
 
         </table>
-        
+
     </form>
-    <div class ="createEmployee">
-    <form method="post" action="/challenge2/backstage/createEmployee">
-        <table style ="background : #77DDFF">
-            <tr><td>新建員工姓名<input type="text" name="name" /></td></tr>
-            <tr><td>員工所屬部門<input type="text" name="department" /></td></tr>
-            <tr><td><input type="submit" value="Submit" /></td></tr>
-        </table>
-    </form>
+    <div class="createEmployee">
+        <form method="post" action="/challenge2/backstage/createEmployee">
+            <table style="background : #77DDFF">
+                <tr>
+                    <td>新建員工姓名<input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td>員工所屬部門<input type="text" name="department" /></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="新增" /></td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 
