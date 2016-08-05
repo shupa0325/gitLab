@@ -60,7 +60,7 @@
                 /* "帳號長度至少要八個字元" */
             }
             else {
-                $sel='SELECT `pAccount` FROM `account` where `pAccount`=' . "'$Account'";
+                $sel='SELECT `pAccount` FROM `account` WHERE `pAccount`=' . "'$Account'";
                 $result=mysqli_query(Server:: $worldO, $sel);
                 if($row=mysqli_fetch_assoc($result)) {
                     return 2;
@@ -94,7 +94,7 @@
         
         #loginAccount($Account, $userPwd)用於檢查登入
         public function loginAccount($Account,$userPwd) {
-            $sel='SELECT `pPassword` FROM `account` where `pAccount`=' . "'$Account'";
+            $sel='SELECT `pPassword` FROM `account` WHERE `pAccount`=' . "'$Account'";
             $result=mysqli_query(Server::$worldO, $sel);
             if(!$Account | !$userPwd) {
                 return 1;//return "帳號密碼不可為空白";

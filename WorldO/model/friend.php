@@ -13,7 +13,7 @@
         
         function getFriendList(){
             $sql = "SELECT `friendAccount` FROM `userFriend`
-            where `userAccount` = '{$_SESSION['username']}' and isfriend = true ";
+            WHERE `userAccount` = '{$_SESSION['username']}' AND isfriend = true ";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
             while($row = mysqli_fetch_row($result)){
@@ -29,7 +29,7 @@
         #======================================================================#
         
         function getFriendInvite(){
-            $sql="select `friendAccount` from `userFriend` where `userAccount` =  '{$_SESSION['username']}' and `isfriend` = 0";
+            $sql="SELECT `friendAccount` FROM `userFriend` WHERE `userAccount` =  '{$_SESSION['username']}' AND `isfriend` = 0";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
             while($row = mysqli_fetch_row($result)){
@@ -47,19 +47,19 @@
         #======================================================================#
         
         public function addFriend($friendAccount){
-            $sql="select `pAccount` from `account` where `pAccount` =  '$friendAccount'";
+            $sql="SELECT `pAccount` FROM `account` WHERE `pAccount` =  '$friendAccount'";
             $result = mysqli_query(Server::$worldO,$sql);
             
             if(mysqli_fetch_row($result)){
                     
                 $sql = "INSERT INTO `worldO`.`userFriend` (`userAccount`, `friendAccount`, `talkRecord`, `isfriend`) VALUES ('{$_SESSION['username']}', '$friendAccount', NULL,1), ('$friendAccount', '{$_SESSION['username']}', NULL,0);";
                 if(mysqli_query(Server::$worldO,$sql)){
-                    echo "success";
+                    return "success";
                 }else{
-                    echo "failure";
+                    return "failure";
                 }
                 }else{
-                    echo "no person";
+                    return "no person";
                 }
         }
         
@@ -87,9 +87,9 @@
                 $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$friendAccount' AND `userFriend`.`friendAccount` = '{$_SESSION['username']}'";
                 mysqli_query(Server::$worldO,$sel);
                 if(mysqli_query(Server::$worldO,$sel)){
-                    echo "success";
+                    return "success";
                 }else{
-                    echo "failure";
+                    return "failure";
                 }
              
         }

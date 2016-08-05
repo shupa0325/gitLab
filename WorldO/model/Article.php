@@ -21,7 +21,7 @@ class Article{
         
         function loadArticle(){
             
-        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content`,`ID` FROM `article` where `userName` like '{$_SESSION['username']}' or `userName` in (SELECT  `friendAccount` 
+        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content`,`ID` FROM `article` WHERE `userName` like '{$_SESSION['username']}' or `userName` in (SELECT  `friendAccount` 
                 FROM  `userFriend` 
                 WHERE  `userAccount` =  '{$_SESSION['username']}') ORDER BY  `article`.`issuetime` DESC  limit 6";
         $result = mysqli_query(Server::$worldO,$sql);//所有相關文章資料
@@ -44,7 +44,7 @@ class Article{
                 
         function loadmyArticle(){
             
-        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content`,`ID` FROM `article` where `userName` like '{$_SESSION['username']}' ORDER BY  `article`.`issuetime` DESC  limit 6";
+        $sql = "SELECT `userName`,`issuetime`,`articleName`,`content`,`ID` FROM `article` WHERE `userName` like '{$_SESSION['username']}' ORDER BY  `article`.`issuetime` DESC  limit 6";
         $result = mysqli_query(Server::$worldO,$sql);//所有相關文章資料
         $res;
         $i=0;
@@ -62,7 +62,7 @@ class Article{
         #======================================================================#
         
         function updateArticle($articleName,$content,$id){
-            $sql ="UPDATE `worldO`.`article` SET `articleName` = '$articleName', `content` = '$content' WHERE `article`.`ID` = $id  and `userName` = '{$_SESSION['username']}'";
+            $sql ="UPDATE `worldO`.`article` SET `articleName` = '$articleName', `content` = '$content' WHERE `article`.`ID` = $id  AND `userName` = '{$_SESSION['username']}'";
             return mysqli_query(Server::$worldO,$sql);
             
         }
@@ -72,7 +72,7 @@ class Article{
         #======================================================================#
         
         function deleteArticle($id){
-            $sql = "DELETE FROM `worldO`.`article` WHERE `article`.`ID` = $id and `userName` = '{$_SESSION['username']}'";
+            $sql = "DELETE FROM `worldO`.`article` WHERE `article`.`ID` = $id AND `userName` = '{$_SESSION['username']}'";
             return mysqli_query(Server::$worldO,$sql);
         }
         

@@ -9,7 +9,7 @@
             
         public function __construct(){
             Server::setConnect();
-            $sql = "SELECT * FROM `account` where `pAccount` = '{$_SESSION['username']}'";
+            $sql = "SELECT * FROM `account` WHERE `pAccount` = '{$_SESSION['username']}'";
             $result=mysqli_query(Server:: $worldO, $sql);
             $row = mysqli_fetch_assoc($result);
             foreach ($row as $key => $value) {
@@ -36,7 +36,7 @@
         
         public function isMessage(){
             $sql = "SELECT `friendAccount` FROM `userFriend`
-where `userAccount` like '{$_SESSION['username']}' and `readmessage` = 'F'";
+WHERE `userAccount` LIKE '{$_SESSION['username']}' AND `readmessage` = 'F'";
             $result =  mysqli_query(Server:: $worldO, $sql);
             while($row = mysqli_fetch_array($result)){
                     $friend []=$row[0];
@@ -51,7 +51,7 @@ where `userAccount` like '{$_SESSION['username']}' and `readmessage` = 'F'";
         
         public function getMessage($friend){
             $sql="SELECT `talkRecord` FROM `userFriend`
-where `userAccount` like '{$_SESSION['username']}' and `friendAccount` like '$friend'";
+WHERE `userAccount` LIKE '{$_SESSION['username']}' AND `friendAccount` LIKE '$friend'";
             $result = mysqli_query(Server:: $worldO, $sql);
             $message = mysqli_fetch_array($result);
             return $message[0];
