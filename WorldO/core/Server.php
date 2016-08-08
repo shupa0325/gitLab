@@ -8,23 +8,23 @@
         }
     }
     
-    class myServer{
-        private static $connection = NULL;
+    // class myServer{
+    //     private static $connection = NULL;
          
-        function __construct() {
-            $pdo = new PDO("mysql:host=localhost;dbname=worldO;port=3306", "guest", "guest");
-            $pdo->exec("SET CHARACTER SET utf8");
-            self::$connection = $pdo;
-            $pdo = null;
-        }
+    //     function __construct() {
+    //         $pdo = new PDO("mysql:host=localhost;dbname=worldO;port=3306", "guest", "guest");
+    //         $pdo->exec("SET CHARACTER SET utf8");
+    //         self::$connection = $pdo;
+    //         $pdo = null;
+    //     }
          
-        function getConnection(){
-            return self::$connection;
-        }
+    //     function getConnection(){
+    //         return self::$connection;
+    //     }
          
          
-        function closeConnection(){
-            self::$connection = NULL;
-        }
-    }
+    //     function closeConnection(){
+    //         self::$connection = NULL;
+    //     }
+    // }
     ?>

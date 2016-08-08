@@ -25,7 +25,7 @@
         
         public function updateData(){
             $update = $this->model("userData");
-            ($update -> changeData($_POST))?header("location:/WorldO/"):header("location:/WorldO/data/editData");
+            $update -> changeData($_POST)?header("/WorldO/"):header("/WorldO/data/editData");
         }
         
         #======================================================================#

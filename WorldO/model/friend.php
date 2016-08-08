@@ -2,7 +2,7 @@
 
     class friend{
 
-        function __construct(){
+      public function __construct(){
             Server::setConnect();
         }
         
@@ -11,7 +11,7 @@
         #getFriendList() 回傳帳戶的好友名單                       #
         #======================================================================#
         
-        function getFriendList(){
+      public function getFriendList(){
             $sql = "SELECT `friendAccount` FROM `userFriend`
             WHERE `userAccount` = '{$_SESSION['username']}' AND isfriend = true ";
             $result = mysqli_query(Server::$worldO,$sql);
@@ -28,7 +28,7 @@
         #getFriendInvite()獲取帳戶好友邀請資訊                     #
         #======================================================================#
         
-        function getFriendInvite(){
+      public function getFriendInvite(){
             $sql="SELECT `friendAccount` FROM `userFriend` WHERE `userAccount` =  '{$_SESSION['username']}' AND `isfriend` = 0";
             $result = mysqli_query(Server::$worldO,$sql);
             $res;
@@ -67,7 +67,7 @@
         #acceptInvite($friendAccount) 接受好友邀請                  #
         #======================================================================#
             
-        function acceptInvite($friendAccount){
+      public function acceptInvite($friendAccount){
              $sql="UPDATE  `worldO`.`userFriend` SET  `isfriend` =  '1' WHERE  `userFriend`.`userAccount` =  '{$_SESSION['username']}' AND  `userFriend`.`friendAccount` =  '$friendAccount';";
              if(mysqli_query(Server::$worldO,$sql))
                 return "success";
@@ -81,7 +81,7 @@
         #deleteFriend($friendAccount)刪除好友                       #
         #======================================================================#
         
-        function deleteFriend($friendAccount){
+      public function deleteFriend($friendAccount){
                 $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '{$_SESSION['username']}' AND `userFriend`.`friendAccount` = '$friendAccount'";
                 mysqli_query(Server::$worldO,$sel);
                 $sel = "DELETE FROM `worldO`.`userFriend` WHERE `userFriend`.`userAccount` = '$friendAccount' AND `userFriend`.`friendAccount` = '{$_SESSION['username']}'";

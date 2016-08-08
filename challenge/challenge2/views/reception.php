@@ -10,6 +10,7 @@
     </head>
     <body>
         <?php require_once("basic.html");?>
+        <?php if(isset($_SESSION['EID'])){?>
         <div class = "blackboard">
             <form>
                 <table border='1px' style='text-align:center'>
@@ -41,5 +42,27 @@
                 }; ?>
                 </table>
             </form>
+        <?php }else{?>
+            <form class="form-login" method="post" action="">
+        <table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#F2F2F2">
+        <tr>
+                <td colspan="2" align="center" bgcolor="#CCCCCC">
+                    <font color="#FFFFFF">請輸入員工編號</font>
+                </td>
+            </tr>
+             <tr>
+                <td width="80" align="center" valign="baseline">員工編號</td>
+                <td valign="baseline">
+                    <input type="Number" name="EID" id="EID" maxlength="10" value="" required/>
+            </tr>
+             <tr>
+                <td width="80" align="center" valign="baseline">員工密碼</td>
+                <td valign="baseline">
+                    <input type="password" name="password" id="password" maxlength="20" value="ssssssss" required/>
+            </tr>
+                </table>
+            </form>
+        
+        <?php }?>
     </body>
 </html>

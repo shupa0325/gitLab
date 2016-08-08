@@ -3,18 +3,18 @@
 class Server{
     private $connection = NULL;
      
-    function __construct() {
+    public function __construct() {
         $pdo = new PDO("mysql:host=localhost;dbname=ActivitySystem;port=3306", "guest", "guest");
         $pdo->exec("SET CHARACTER SET utf8");
         $this->connection = $pdo;
     }
      
-    function getConnection(){
+    public function getConnection(){
         return $this->connection;
     }
      
      
-    function closeConnection(){
+    public function closeConnection(){
         $this->$connection = NULL;
     }
 }

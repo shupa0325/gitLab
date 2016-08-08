@@ -1,15 +1,15 @@
 <?php
 
     class block{
-        var $temp;
-        var $temp2;
+        public  $temp;
+        public  $temp2;
         #類別生成
-        function __construct($array){
+        public function __construct($array){
             $this ->temp = $array;
             $this ->temp2 = $array;
         }
         #印出陣列
-        function printArray(){
+        public function printArray(){
             echo "<br>";
             foreach($this->temp as $value){
                 foreach($value as $va){
@@ -20,7 +20,7 @@
             echo "<br>";
         }
         #計算最大圖形陣列
-        function math(){
+        public function math(){
              $max;
             for($i = 0;$i < count($this->temp); $i++){
                 for($j = 0;$j < count($this->temp[$i]); $j++){

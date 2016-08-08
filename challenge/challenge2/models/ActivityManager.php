@@ -1,12 +1,12 @@
 <?php
 class ActivityManager{
-    var $id ;
-    var $url;
-    var $server;
-    function __construct(){
+    public $id ;
+    public $url;
+    public $server;
+    public function __construct(){
         $this->server = new Server();
     }
-    function createActivity($data){
+    public function createActivity($data){
         $pdo =$this->server->getConnection();
         $sql = "INSERT INTO  `ActivitySystem`.`ActivityTotal`(
                 `Aname`,
@@ -33,11 +33,11 @@ class ActivityManager{
         }
         return false;
     }
-    function deleteActivity($data){
+    public function deleteActivity($data){
             
         
     }
-    function updateActivity($ID,$EID,$totalJoin,$nowJoin){
+    public function updateActivity($ID,$EID,$totalJoin,$nowJoin){
         
         #更新活動員工參加人數
         $pdo =$this->server->getConnection();
@@ -56,7 +56,7 @@ class ActivityManager{
         $result->execute();
         
     }
-    function setJoinTabel($ID,$EID){
+    public function setJoinTabel($ID,$EID){
         
         #設定參加人數
         $pdo =$this->server->getConnection();
@@ -71,7 +71,7 @@ class ActivityManager{
             
         }
     }
-    function getActivity($url){
+    public function getActivity($url){
         $pdo =$this->server->getConnection();
         $sql = "SELECT * FROM  `ActivityTotal` WHERE 
                 `url` = :url";
@@ -83,7 +83,7 @@ class ActivityManager{
         $row = $result->fetch();
         return $row;
     }
-    function getAllActivity(){
+    public function getAllActivity(){
         $pdo =$this->server->getConnection();
         $sql = "SELECT * FROM `ActivityTotal`";
         $result = $pdo->prepare($sql);
@@ -93,7 +93,7 @@ class ActivityManager{
         return $row;
     }
     
-    function queue($ID,$withPerson){
+    public function queue($ID,$withPerson){
         $pdo =$this->server->getConnection();
         #新增排程，使用者領取號碼牌
         $sql = "INSERT INTO  `ActivitySystem`.`bakery`(
@@ -126,7 +126,7 @@ class ActivityManager{
             return "報名額滿";
         }
     }
-    function setURL($ID){
+    public function setURL($ID){
         $pdo =$this->server->getConnection();
         $sql = "UPDATE  `ActivitySystem`.`ActivityTotal` SET  `url` =  :url 
                 WHERE  `ActivityTotal`.`ID` = :ID";
