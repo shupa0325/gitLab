@@ -83,6 +83,17 @@ class ActivityManager{
         $row = $result->fetch();
         return $row;
     }
+    
+    public function getMyActivity(){
+        $pdo =$this->server->getConnection();
+        $sql = "SELECT * FROM `ActivityTotal`";
+        $result = $pdo->prepare($sql);
+        $result ->execute();
+        $result ->setFetchMode(PDO::FETCH_ASSOC);
+        $row =$result->fetchAll();
+        return $row;
+    }
+    
     public function getAllActivity(){
         $pdo =$this->server->getConnection();
         $sql = "SELECT * FROM `ActivityTotal`";

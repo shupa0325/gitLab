@@ -38,7 +38,7 @@ class employeeManager{
     #======================================================================#
     public function loadEmployee(){
         $pdo =$this->server->getConnection();
-        $sql = "select `EID`,`Name` FROM  `employee`";
+        $sql = "SELECT `EID`,`Name` FROM  `employee`";
         $result = $pdo->prepare($sql);
         $result->execute();
         $result ->setFetchMode(PDO::FETCH_ASSOC);
@@ -49,15 +49,23 @@ class employeeManager{
     #======================================================================#
     #loginEmployee()    登入員工帳號                                       #
     #======================================================================#
-    public function loginEmployee(){
-        $pdo =$this->server->getConnection();
-        // $sql = "select `EID`,`Name` FROM  `employee`";
-        // $result = $pdo->prepare($sql);
-        // $result->execute();
-        // $result ->setFetchMode(PDO::FETCH_ASSOC);
-        // $data;
-        // $row = $result->fetchAll();
-        return $row;
+    public function loginEmployee($EID = NULL,$password = NULL){
+        if($EID and $password){
+            $pdo =$this->server->getConnection();
+            $sql = "SELECT `Name` FROM  `employee` WHERE `EID` LIKE :EID AND `password` LIKE :password";
+            $result = $pdo->prepare($sql);
+            $result -> bindParam(':EID',$EID);
+            $result -> bindParam(':password',$password);
+            $result->execute();
+            $result ->setFetchMode(PDO::FETCH_ASSOC);
+            if($row = $result->fetch()){
+                $_SESSION['Name'] = $row['Name'];
+                $_SESSION['EID'] = $EID;
+                return true;
+            }
+            
+        }
+        return false;
     }
 }
 ?>
